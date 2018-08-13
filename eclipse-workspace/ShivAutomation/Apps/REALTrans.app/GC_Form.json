@@ -1,0 +1,402 @@
+{
+    "versionUuid": "1b68c3d1-ca9b-42ce-ad98-93eb9099bb84",
+    "readOnly": false,
+    "sections": [
+                 {
+                 "code": "GC_TASK_S111",
+                 "pages": [
+                           {
+                           "code": "GC_TASK_S1_P111",
+                           "questionGroups": [
+                                              {
+                                              "code": "0efef239-72a0-430b-a4a1-cb257bb45f9f",
+                                              "order": 1,
+                                              "questions": [
+                                                            {
+                                                            "code": "b1be7900-ddff-4bc1-8791-0ca1fcd9476c",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseClean",
+                                                                         "optionsList": {
+                                                                         "code": "cf965729-04f2-4b5d-b2c4-eb2dd49ab5f2",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Whole house clean move in ready?[$125]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Whole house clean move in ready?[$125]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "b4dd2a31-ad4f-4ac7-94db-0e49a3cd6097",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseClean",
+                                                                         "optionsList": {
+                                                                         "code": "763200e6-5cd7-4e2e-a3a7-5316649fe45a",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Furnace - heavy clean, replace filters and service - w/ AC?[$500]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Furnace - heavy clean, replace filters and service - w/ AC?[$500]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "1472daca-d34a-4814-bbf6-565608798dae",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseClean",
+                                                                         "optionsList": {
+                                                                         "code": "075a456d-772c-41f2-8be8-ae63026eb789",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Clean ductwork - Interior - Heavy clean (PER REGISTER)? [$45]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Clean ductwork - Interior - Heavy clean (PER REGISTER)? [$45]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "8f686d7a-6393-4468-be58-67b8e58efed1",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseClean",
+                                                                         "optionsList": {
+                                                                         "code": "f00f8fe2-6334-4eca-b605-85dadeb7df2f",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Clean and deodorize carpet? [$117]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Clean and deodorize carpet? [$117]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "Cleaning"
+                                              },
+                                              {
+                                              "code": "0507cde9-d531-4988-8ade-db2ad9b22c00",
+                                              "order": 1,
+                                              "questions": [
+                                                            {
+                                                            "code": "54fb9ae4-4027-4592-a629-1703b001bb1e",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseCleanMovIn",
+                                                                         "optionsList": {
+                                                                         "code": "e62c4eda-6f6b-4243-85e1-028e888d3432",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Repair/Replace Door Trim?[$185.70]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Repair/Replace Door Trim?[185.70]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "ffe7a00b-5b89-496a-b9bc-6ced85471e2a",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseCleanMovIn",
+                                                                         "optionsList": {
+                                                                         "code": "b1ab794b-060f-4c58-b859-2716871b6799",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Replace Hinges ? [$132]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Replace Hinges ? [$132]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "c93bca32-aad5-4239-8c5a-ade426f98325",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseCleanMovIn",
+                                                                         "optionsList": {
+                                                                         "code": "bdbb5933-073e-4e8a-bf47-c4c6d720ded4",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Replace Bathtub ? [$865.87]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Replace Bathtub ? [$865.87]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "b0aeb746-c6c8-4d3a-80d7-a4f78fae9e6f",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarHouseCleanMovIn",
+                                                                         "optionsList": {
+                                                                         "code": "2690a188-6b25-4278-821d-ed7bfd3b340d",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Not Started",
+                                                                                         "key": "Not Started",
+                                                                                         "label": "Not Started"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "In Progress",
+                                                                                         "key": "In Progress",
+                                                                                         "label": "In Progress"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Completed",
+                                                                                         "key": "Completed",
+                                                                                         "label": "Completed"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false
+                                                                         },
+                                                                         "displayText": "Replace Range Freestanding Gas 30 inches Black Whirlpool or Similar?[$860]"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Replace Range Freestanding Gas 30 inches Black Whirlpool or Similar?[$860]",
+                                                            "helpText": "Quantity  :  500 \nUoM   : SF\nLabor  : $300.00\nMaterial :  $  0.00\nEquipment : $ 50.00\nTotal  : $350.00\nInstruction: \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum \nLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\nLorem Ipsum\nLorem Ipsum Lorem Ipsum Lorem Ipsum",
+                                                            "type": "NONE"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "Bathroom"
+                                              }
+                                              ]
+                           }
+                           ],
+                 "displayText": "Details",
+                 "status": "UNVISITED"
+                 }
+                 ]
+}

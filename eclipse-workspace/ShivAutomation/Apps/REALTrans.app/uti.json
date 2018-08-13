@@ -1,0 +1,596 @@
+
+{
+    "versionUuid": "f4edf1cf-d9ea-4534-991c-eac54822abc5",
+    "readOnly": false,
+    "sections": [
+                 {
+                 "code": "UTI_INSPECTION_TASK_MOBILE_S1",
+                 "name": "UTI_INSPECTION_TASK_MOBILE_S1",
+                 "pages": [
+                           {
+                           "code": "UTI_TASK_S1_P1",
+                           "name": "UTI_TASK_S1_P1",
+                           "questionGroups": [
+                                              {
+                                              "code": "e25a83d7-d6ba-4b13-8e8c-b572a537d642",
+                                              "name": "e25a83d7-d6ba-4b13-8e8c-b572a537d642",
+                                              "questions": [
+                                                            {
+                                                            "code": "6339c485-9c99-49c8-914b-ce84494b3b86",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarElectricityOn",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "32e5c5da-a937-482a-9d14-496a4692da92",
+                                                                                        "name": "32e5c5da-a937-482a-9d14-496a4692da92",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "3273f8b4-bd00-4e48-8cd0-41f6e2263d46",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TERNARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Electricity is ON. If response is 'NO', provide relevant details in Comments."
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Electricity is ON. If response is 'NO', provide relevant details in Comments.",
+                                                            "type": "NONE"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "Electricity"
+                                              },
+                                              {
+                                              "code": "8529a2e5-1be5-4bc1-8e75-1db6840ebc38",
+                                              "name": "8529a2e5-1be5-4bc1-8e75-1db6840ebc38",
+                                              "order": 1,
+                                              "questions": [
+                                                            {
+                                                            "code": "e9db7e98-9adb-4d36-a62d-2e1d4237058d",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarWaterType",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "e16fa00c-2827-4068-bf6c-10f1be04f5f9",
+                                                                                        "name": "e16fa00c-2827-4068-bf6c-10f1be04f5f9",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "61144634-7bb4-44e3-8cfc-42395b10fe55",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Municipal water & sewer"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "Private well & septic"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "DEFAULT",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Water type: Photo is required."
+                                                                         },
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarWaterSightFlowIndicatesLeak",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "81a07f40-bbcb-4aa5-b316-a97c274bdc63",
+                                                                                        "name": "81a07f40-bbcb-4aa5-b316-a97c274bdc63",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "dd009906-874b-4d3b-953c-f204e6bcff29",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "DEFAULT",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Check the sight flow indicator (triangle or asterisk shape) on the municipal water meter: does it indicate leaks exist within the plumbing system? If response is 'YES', provide relevant details in Comments."
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Water type: Photo is required.",
+                                                            "type": "COMPOSITE"
+                                                            },
+                                                            {
+                                                            "code": "37eb0ac6-9013-4947-a296-60cbc6012074",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarWaterOn",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "3d87a88f-6555-4976-a760-0c50d4423cae",
+                                                                                        "name": "3d87a88f-6555-4976-a760-0c50d4423cae",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "162b383f-e16d-426b-a4a3-738a2e005ee9",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": true,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Water is ON. If response is 'NO', provide relevant details in Comments."
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Water is ON. If response is 'NO', provide relevant details in Comments.",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "1bb2054b-5956-4048-ac78-dee8b177dc66",
+                                                            "order": 2,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarWaterShutOffValveLeakEvidence",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "0e7eb744-c613-4bae-b68f-16535243970d",
+                                                                                        "name": "0e7eb744-c613-4bae-b68f-16535243970d",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "7ae2355a-5397-49de-b065-db7ae2bf60f4",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Check all supply shut-off valves (angled stops) under sinks and toilets: is there evidence of drips or leaks? If response is 'YES', provide relevant details in Comments."
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Check all supply shut-off valves (angled stops) under sinks and toilets: is there evidence of drips or leaks? If response is 'YES', provide relevant details in Comments.",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "cf65d84e-c866-4d3a-83e3-cb417fb8ba8f",
+                                                            "order": 3,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarWaterDrainLineLeakEvidence",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "61592d85-a7f9-4d03-ba1e-9c2f86d03a43",
+                                                                                        "name": "61592d85-a7f9-4d03-ba1e-9c2f86d03a43",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "b246bc8c-f33d-4b7d-8f6a-024a56103cba",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Check all drain lines under all tubs, sinks and toilets: is there evidence of leak? If response is 'YES', provide relevant details in Comments."
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Check all drain lines under all tubs, sinks and toilets: is there evidence of leak? If response is 'YES', provide relevant details in Comments.",
+                                                            "type": "NONE"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "Water"
+                                              },
+                                              {
+                                              "code": "c04dd65a-949d-4831-902c-ceaeb1009832",
+                                              "name": "c04dd65a-949d-4831-902c-ceaeb1009832",
+                                              "order": 2,
+                                              "questions": [
+                                                            {
+                                                            "code": "7ce3c1e0-e639-4db7-9012-299993389065",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarPropertyUseGas",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "183109f6-0745-4303-b70d-6d720d6afe05",
+                                                                                        "name": "183109f6-0745-4303-b70d-6d720d6afe05",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "bf841ded-5af3-44bb-b617-d5283a6f7445",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "DATE_TIME",
+                                                                         "templateType": "DATE_TIME",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Does the property use Gas?  Select 'NO' if property is all electric. Photo is required."
+                                                                         },
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarGasType",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "846d22a7-9769-4095-a185-d7efcd8c48e1",
+                                                                                        "name": "846d22a7-9769-4095-a185-d7efcd8c48e1",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "098675fa-90f9-491d-a06b-b7d6041e16c3",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Natural",
+                                                                                         "name": "Natural",
+                                                                                         "key": "Natural",
+                                                                                         "label": "Natural"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "Propane",
+                                                                                         "name": "Propane",
+                                                                                         "key": "Propane",
+                                                                                         "label": "Propane"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "DATE",
+                                                                         "templateType": "DATE_TIME",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Gas type"
+                                                                         },
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarNaturalGasOn",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "03cdc900-5954-407c-8e81-9d60285930f7",
+                                                                                        "name": "03cdc900-5954-407c-8e81-9d60285930f7",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "47d1c458-0976-4c65-88c4-48766f81a1bb",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "NA",
+                                                                                         "name": "NA",
+                                                                                         "key": "NA",
+                                                                                         "label": "NA"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "TIME",
+                                                                         "templateType": "DATE_TIME",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Natural gas is ON. If response is 'NO', provide relevant details in Comments."
+                                                                         },
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarSufficientOnsitePropaneGas",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "41ecc83a-5201-44e3-bd38-6e49ee07a3b3",
+                                                                                        "name": "41ecc83a-5201-44e3-bd38-6e49ee07a3b3",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "22b7a16e-fb7a-4ae8-b761-f6e8c1675bb5",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "NA",
+                                                                                         "name": "NA",
+                                                                                         "key": "NA",
+                                                                                         "label": "NA"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "DATE",
+                                                                         "templateType": "DATE_TIME",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Propane gas tank located onsite and contains sufficient amount of propane for tenant move-in. If response is 'NO', provide relevant details in Comments."
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Does the property use Gas? Select 'NO' if property is all electric. Photo is required.",
+                                                            "type": "COMPOSITE"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "Gas"
+                                              }
+                                              ]
+                           }
+                           ],
+                 "displayText": "Standard Checklist",
+                 "status": "UNVISITED"
+                 }
+                 ]
+}

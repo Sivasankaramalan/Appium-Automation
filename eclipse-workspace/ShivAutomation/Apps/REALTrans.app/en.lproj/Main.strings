@@ -1,0 +1,48 @@
+
+/* Class = "UIButton"; normalTitle = "VIEW TASKS"; ObjectID = "2jx-be-RT0"; */
+"2jx-be-RT0.normalTitle" = "VIEW TASKS";
+
+/* Class = "UILabel"; text = "Tasks"; ObjectID = "6El-ml-qbC"; */
+"6El-ml-qbC.text" = "Tasks";
+
+/* Class = "UINavigationItem"; title = "dd"; ObjectID = "BcW-u2-Lhh"; */
+"BcW-u2-Lhh.title" = "dd";
+
+/* Class = "UIButton"; normalTitle = "VIEW OFFERS"; ObjectID = "Dnz-sz-KtE"; */
+"Dnz-sz-KtE.normalTitle" = "VIEW OFFERS";
+
+/* Class = "UILabel"; text = "Offers"; ObjectID = "OrX-YQ-X7i"; */
+"OrX-YQ-X7i.text" = "Offers";
+
+/* Class = "UIButton"; normalTitle = "VIEW TASKS"; ObjectID = "R8r-7r-etr"; */
+"R8r-7r-etr.normalTitle" = "VIEW TASKS";
+
+/* Class = "UILabel"; text = "Offers"; ObjectID = "Urw-Ld-zS7"; */
+"Urw-Ld-zS7.text" = "Offers";
+
+/* Class = "UILabel"; text = "Offers available"; ObjectID = "ZpU-x9-lQU"; */
+"ZpU-x9-lQU.text" = "Offers available";
+
+/* Class = "UILabel"; text = "45"; ObjectID = "an3-ts-ujX"; */
+"an3-ts-ujX.text" = "45";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "bM5-GO-XOC"; */
+"bM5-GO-XOC.title" = "Title";
+
+/* Class = "UILabel"; text = "Tasks pending"; ObjectID = "kXo-h1-pSy"; */
+"kXo-h1-pSy.text" = "Tasks pending";
+
+/* Class = "UIButton"; normalTitle = "VIEW OFFERS"; ObjectID = "o9a-5Y-BGk"; */
+"o9a-5Y-BGk.normalTitle" = "VIEW OFFERS";
+
+/* Class = "UILabel"; text = "Tasks"; ObjectID = "oo8-6e-gw5"; */
+"oo8-6e-gw5.text" = "Tasks";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "qxx-aa-QqH"; */
+"qxx-aa-QqH.title" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "vil-Jm-tbn"; */
+"vil-Jm-tbn.title" = "Item";
+
+/* Class = "UILabel"; text = "45"; ObjectID = "zaQ-0T-s9J"; */
+"zaQ-0T-s9J.text" = "45";

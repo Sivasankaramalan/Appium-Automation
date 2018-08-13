@@ -1,0 +1,661 @@
+{
+    "createdBy": "SYSTEM",
+    "code": "GRASSCUT_TASK_V1_MOBILE_RELEASE-R.9.0",
+    "name": "DynamicForm for GRASSCUT Task - 1st Version - Mobile iOS",
+    "compatibleUi": "MOBILE_IOS",
+    "published": false,
+    "sections": [
+                 {
+                 "code": "GRASSCUT_TASK_S1",
+                 "order": "0",
+                 "displayText": "General Property Information",
+                 "status": "UNVISITED",
+                 "pages": [
+                           {
+                           "code": "GRASSCUT_TASK_S1_P1",
+                           "order": 0,
+                           "questionGroups": [
+                                              {
+                                              "helpText": "Question Group help text.",
+                                              "headerQuestion": "General Property Information",
+                                              "order": 1,
+                                              "questions": [
+                                                            {
+                                                            "displayText": "Provide a photo of the front of the house from the street.\n\n[Proporcione una foto del frente de la propiedad, desde la calle]",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarFrontHouse",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Provide a photo of the front of the house from the street.\n\n[Proporcione una foto del frente de la propiedad, desde la calle]"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Provide a photo of the house number or street number (mailbox, curb, house).\n\n[Proporcione una foto del número de la casa o número de la calle (buzón, bordillo, propiedad)]",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarStreetNumber",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Provide a photo of the house number or street number (mailbox, curb, house).\n\n[Proporcione una foto del número de la casa o número de la calle (buzón, bordillo, propiedad)]"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Provide before photos of the front, side and back yard.\n\n[Proporcione fotos de \"Antes\" del frente, lateral y patio trasero de la propiedad]",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarPhotoBeforeFrontBackYard",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Provide before photos of the front, side and back yard\n\n[Proporcione fotos de \"Antes\" del frente, lateral y patio trasero de la propiedad]"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Provide after photos of the front, side and back yard.\n\n[Proporcione fotos de \"Después\" del frente, lateral y patio trasero de la propiedad]",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarPhotoAfterFrontBackYard",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": false
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Provide after photos of the front, side and back yard\n\n[Proporcione fotos de \"Después\" del frente, lateral y patio trasero de la propiedad]"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Is there any debris at the property?\n\n[¿Hay desechos en la propiedad?]",
+                                                            "order": 1,
+                                                            "type": "COMPOSITE",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "control": {
+                                                                         "code": "SINGLE_CHOICE"
+                                                                         },
+                                                                         "displayText": "Is there any debris at the property?\n\n[¿Hay desechos en la propiedad?]",
+                                                                         "boundVariable": {
+                                                                         "code": "VarIsDebris",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": false
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "type": "STATIC",
+                                                                         "fetchType": "AUTO",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         }
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": true,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         }
+                                                                         },
+                                                                         {
+                                                                         "displayText": "How many cubic yards of debris were removed?\n\n[¿Cuántos metros cúbicos de deshechos se retiraron de la propiedad?]",
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "control": {
+                                                                         "code": "OPTIONS_LIST"
+                                                                         },
+                                                                         "boundVariable": {
+                                                                         "code": "VarHowManyDerbisRemoved",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "type": "STATIC",
+                                                                         "fetchType": "AUTO",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "ONE",
+                                                                                         "name": "1",
+                                                                                         "key": "ONE",
+                                                                                         "label": "1"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TWO",
+                                                                                         "name": "2",
+                                                                                         "key": "TWO",
+                                                                                         "label": "2"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "THREE",
+                                                                                         "name": "3",
+                                                                                         "key": "THREE",
+                                                                                         "label": "3"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "FOUR",
+                                                                                         "name": "4",
+                                                                                         "key": "FOUR",
+                                                                                         "label": "4"
+                                                                                         }
+                                                                                         ]
+                                                                         }
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         }
+                                                                         },
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarProofOfDebrisClenaup",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Provide photo of consolidated debris that is being removed from the property.\n\n[Proporcione fotos de la totalidad de los deshechos removidos de la propiedad]"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Are there any overgrown shrubs or bushes that need reduction in size?\n\n[¿Hay arbustos sobrecrecidos que necesitan ser podados?]",
+                                                            "order": 1,
+                                                            "type": "COMPOSITE",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "displayText": "Are there any overgrown shrubs or bushes that need reduction in size?\n\n[¿Hay arbustos sobrecrecidos que necesitan ser podados?]",
+                                                                         "control": {
+                                                                         "code": "SINGLE_CHOICE"
+                                                                         },
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarBushesAvailable",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "type": "STATIC",
+                                                                         "fetchType": "AUTO",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         }
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": true,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         }
+                                                                         },
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarOverGrownShrubsBushes",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Photos of overgrown shrubs or bushes"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Are there any repairs needed as a result of unsafe conditions?\n\n[¿Existen condiciones de riesgo que requieran de reparaciones?]",
+                                                            "order": 1,
+                                                            "type": "COMPOSITE",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "control": {
+                                                                         "code": "SINGLE_CHOICE"
+                                                                         },
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "displayText": "Are there any repairs needed as a result of unsafe conditions?\n\n[¿Existen condiciones de riesgo que requieran de reparaciones?]",
+                                                                         "boundVariable": {
+                                                                         "code": "VarUnsafeConditions",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "type": "STATIC",
+                                                                         "fetchType": "AUTO",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         }
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": true,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         }
+                                                                         },
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarPhotoOfRepairsNeeded",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Photos of repairs needed"
+                                                                         },
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarRepairComments",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": false
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "MULTI_LINE",
+                                                                         "keypad": "DEFAULT",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Provide comments on repairs needed\n\n[Proporcione comentarios sobre las reparaciones necesarias]"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Are there any dead trees or limbs that appear to be in an unsafe condition?\n\n[¿Hay árboles muertos o ramas que puedan significar un riesgo o peligro?]",
+                                                            "order": 1,
+                                                            "type": "COMPOSITE",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "control": {
+                                                                         "code": "SINGLE_CHOICE"
+                                                                         },
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "displayText": "Are there any dead trees or limbs that appear to be in an unsafe condition?\n\n[¿Hay árboles muertos o ramas que puedan significar un riesgo o peligro?]",
+                                                                         "boundVariable": {
+                                                                         "code": "VarDeadtreesPresent",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": false
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "type": "STATIC",
+                                                                         "fetchType": "AUTO",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         }
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": true,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": false,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": false,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         }
+                                                                         },
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarPhotoDeadTreesLimbs",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Photos of dead trees or limbs that appear to be in an unsafe condition"
+                                                                         }
+                                                                         ]
+                                                            },
+                                                            {
+                                                            "displayText": "Provide a photo of the nearest intersection sign\n\n[Proporcione una foto de la señal de cruce más cercana]",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "control": {
+                                                                         "code": "TEXTFIELD"
+                                                                         },
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarProofOfUnsafeConditions",
+                                                                         "dataType": "STRING",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "mandatory": false
+                                                                                        }
+                                                                                        ]
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "QA_PHOTOS",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false,
+                                                                         "photoCommentRequired": true,
+                                                                         "photoCommentMandatory": false,
+                                                                         "isPhotoCommentRequired": true,
+                                                                         "isPhotoCommentMandatory": false
+                                                                         },
+                                                                         "displayText": "Provide a photo of the nearest intersection sign\n\n[Proporcione una foto de la señal de cruce más cercana]"
+                                                                         }
+                                                                         ]
+                                                            }
+                                                            ]
+                                              }
+                                              ]
+                           }
+                           ]
+                 }
+                 ]
+}

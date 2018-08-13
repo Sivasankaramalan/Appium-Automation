@@ -1,0 +1,202 @@
+{
+    "profile": {
+        "productInfo": [
+                        {
+                        "name": "IBPO",
+                        "code": "IBPO",
+                        "formNavigation": "STATIC",
+                        "formName": "IBPO_TASK_MOBILE",
+                        "showHistory": false,
+                        "taskMetadata": {
+                        "types": [
+                                  "Complete Inspection"
+                                  ]
+                        },
+                        "agreement": {
+                        "docType": "text",
+                        "url": "text",
+                        "shouldAgree": true,
+                        "documentIds": null
+                        },
+                        "module": [
+                                   {
+                                   "name": "Offer",
+                                   "operations": {
+                                   "title": true,
+                                   "accept": true,
+                                   "bid": true,
+                                   "reject": true,
+                                   "price": true,
+                                   "orderId": true,
+                                   "orderDate": true,
+                                   "dueDate": true,
+                                   "address": true,
+                                   "priority": true,
+                                   "distance": false,
+                                   "mapView": true,
+                                   "persistUsingOrderId": false,
+                                   "partialSave": false,
+                                   "details": {
+                                   "location": true,
+                                   "specialInstructions": true,
+                                   "lineItems": false,
+                                   "changeRequest": false
+                                   },
+                                   "filter": {
+                                   "priority": true,
+                                   "distance": false,
+                                   "dueDate": true
+                                   },
+                                   "performer": {
+                                   "mapView": true,
+                                   "autoAssign": false
+                                   }
+                                   }
+                                   },
+                                   {
+                                   "name": "Task",
+                                   "operations": {
+                                   "title": true,
+                                   "accept": false,
+                                   "bid": false,
+                                   "reject": false,
+                                   "price": false,
+                                   "orderId": true,
+                                   "orderDate": true,
+                                   "dueDate": true,
+                                   "address": true,
+                                   "priority": true,
+                                   "distance": true,
+                                   "mapView": true,
+                                   "persistUsingOrderId": false,
+                                   "partialSave": false,
+                                   "details": {
+                                   "location": true,
+                                   "specialInstructions": true,
+                                   "lineItems": false,
+                                   "changeRequest": false
+                                   },
+                                   "filter": {
+                                   "priority": true,
+                                   "distance": true,
+                                   "dueDate": true
+                                   },
+                                   "performer": {
+                                   "mapView": true,
+                                   "autoAssign": false
+                                   }
+                                   }
+                                   }
+                                   ]
+                        },
+                        {
+                        "name": "ICMA",
+                        "code": "ICMA",
+                        "formNavigation": "STATIC",
+                        "formName": "ICMA_TASK_MOBILE",
+                        "showHistory": false,
+                        "taskMetadata": {
+                        "types": [
+                                  "Complete Inspection"
+                                  ]
+                        },
+                        "agreement": {
+                        "docType": "text",
+                        "url": "text",
+                        "shouldAgree": true,
+                        "documentIds": null
+                        },
+                        "module": [
+                                   {
+                                   "name": "Offer",
+                                   "operations": {
+                                   "title": true,
+                                   "accept": true,
+                                   "bid": true,
+                                   "reject": true,
+                                   "price": true,
+                                   "orderId": true,
+                                   "orderDate": true,
+                                   "dueDate": true,
+                                   "address": true,
+                                   "priority": true,
+                                   "distance": false,
+                                   "mapView": true,
+                                   "persistUsingOrderId": false,
+                                   "partialSave": false,
+                                   "details": {
+                                   "location": true,
+                                   "specialInstructions": true,
+                                   "lineItems": false,
+                                   "changeRequest": false
+                                   },
+                                   "filter": {
+                                   "priority": true,
+                                   "distance": false,
+                                   "dueDate": true
+                                   },
+                                   "performer": {
+                                   "mapView": true,
+                                   "autoAssign": false
+                                   }
+                                   }
+                                   },
+                                   {
+                                   "name": "Task",
+                                   "operations": {
+                                   "title": true,
+                                   "accept": false,
+                                   "bid": false,
+                                   "reject": false,
+                                   "price": false,
+                                   "orderId": true,
+                                   "orderDate": true,
+                                   "dueDate": true,
+                                   "address": true,
+                                   "priority": true,
+                                   "distance": true,
+                                   "mapView": false,
+                                   "persistUsingOrderId": false,
+                                   "partialSave": false,
+                                   "details": {
+                                   "location": true,
+                                   "specialInstructions": true,
+                                   "lineItems": false,
+                                   "changeRequest": false
+                                   },
+                                   "filter": {
+                                   "priority": true,
+                                   "distance": true,
+                                   "dueDate": true
+                                   },
+                                   "performer": {
+                                   "mapView": true,
+                                   "autoAssign": false
+                                   }
+                                   }
+                                   }
+                                   ]
+                        }
+                        ],
+        "userInfo": {
+            "username": "kumsau@altisource.com",
+            "privileges": [
+                           "COORDINATORS",
+                           "PERFORMERS"
+                           ],
+            "vendorNumbers": [
+                              200100423
+                              ],
+            "vendorUserId": "kumsau@altisource.com",
+            "vendorDetails": {
+                "clients": "Testclient1918",
+                "vendor_type": "Real Estate Broker"
+            }
+        },
+        "appInfo": {
+            "vendorCredentials": false,
+            "timeOut": "60",
+            "minClientVersion": "2.0.1"
+        }
+    }
+}

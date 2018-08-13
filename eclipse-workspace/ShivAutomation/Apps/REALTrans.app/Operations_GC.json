@@ -1,0 +1,114 @@
+{
+    "profile": {
+        "productInfo": [
+                        {
+                        "name": "GeneralConstruction",
+                        "code": "GeneralConstruction",
+                        "formNavigation": "CUSTOM",
+                        "formName": "GeneralConstruction",
+                        "showHistory": true,
+                        "taskMetadata": {
+                        "types": [
+                                  "User Fulfillment Task"
+                                  ]
+                        },
+                        "agreement": {
+                        "docType": "pdf",
+                        "url": "text",
+                        "shouldAgree": false,
+                        "documentIds": null
+                        },
+                        "module": [
+                                   {
+                                   "name": "Offer",
+                                   "operations": {
+                                   "title": true,
+                                   "accept": true,
+                                   "bid": false,
+                                   "reject": true,
+                                   "price": true,
+                                   "orderId": true,
+                                   "orderDate": true,
+                                   "dueDate": true,
+                                   "address": true,
+                                   "priority": false,
+                                   "distance": false,
+                                   "mapView": false,
+                                   "persistUsingOrderId": true,
+                                   "partialSave": true,
+                                   "details": {
+                                   "location": true,
+                                   "specialInstructions": true,
+                                   "lineItems": true,
+                                   "changeRequest": false
+                                   },
+                                   "filter": {
+                                   "priority": false,
+                                   "distance": false,
+                                   "dueDate": true
+                                   },
+                                   "performer": {
+                                   "mapView": false,
+                                   "autoAssign": false
+                                   }
+                                   }
+                                   },
+                                   {
+                                   "name": "Task",
+                                   "operations": {
+                                   "title": true,
+                                   "accept": false,
+                                   "bid": false,
+                                   "reject": false,
+                                   "price": false,
+                                   "orderId": true,
+                                   "orderDate": true,
+                                   "dueDate": true,
+                                   "address": true,
+                                   "priority": false,
+                                   "distance": false,
+                                   "mapView": false,
+                                   "persistUsingOrderId": true,
+                                   "partialSave": true,
+                                   "details": {
+                                   "location": true,
+                                   "specialInstructions": true,
+                                   "lineItems": true,
+                                   "changeRequest": true
+                                   },
+                                   "filter": {
+                                   "priority": false,
+                                   "distance": false,
+                                   "dueDate": true
+                                   },
+                                   "performer": {
+                                   "mapView": false,
+                                   "autoAssign": true
+                                   }
+                                   }
+                                   }
+                                   ]
+                        }
+                        ],
+        "userInfo": {
+            "username": "jksmith56@gmail.com",
+            "privileges": [
+                           "PERFORMERS",
+                           "COORDINATORS"
+                           ],
+            "vendorNumbers": [
+                              100140503
+                              ],
+            "vendorUserId": "jksmith56@gmail.com",
+            "vendorDetails": {
+                "clients": "REIS",
+                "vendor_type": "General Contractor"
+            }
+        },
+        "appInfo": {
+            "vendorCredentials": false,
+            "timeOut": "60",
+            "minClientVersion": "2.0.1"
+        }
+    }
+}

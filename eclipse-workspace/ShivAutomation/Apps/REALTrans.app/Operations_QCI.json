@@ -1,0 +1,114 @@
+'{
+"profile": {
+    "productInfo": [
+                    {
+                    "name": "QUALITY_CONTROL_INSPECTION",
+                    "code": "Quality_Control_Inspection",
+                    "formNavigation": "CUSTOM",
+                    "formName": "Inspection_TASK",
+                    "showHistory": false,
+                    "taskMetadata": {
+                    "types": [
+                              "Complete Inspection"
+                              ]
+                    },
+                    "agreement": {
+                    "docType": "text",
+                    "url": "text",
+                    "shouldAgree": false,
+                    "documentIds": null
+                    },
+                    "module": [
+                               {
+                               "name": "Offer",
+                               "operations": {
+                               "title": true,
+                               "accept": true,
+                               "bid": false,
+                               "reject": true,
+                               "price": false,
+                               "orderId": true,
+                               "orderDate": true,
+                               "dueDate": true,
+                               "address": true,
+                               "priority": false,
+                               "distance": false,
+                               "mapView": true,
+                               "persistUsingOrderId": true,
+                               "partialSave": false,
+                               "details": {
+                               "location": true,
+                               "specialInstructions": true,
+                               "lineItems": false,
+                               "changeRequest": false
+                               },
+                               "filter": {
+                               "priority": false,
+                               "distance": false,
+                               "dueDate": true
+                               },
+                               "performer": {
+                               "mapView": true,
+                               "autoAssign": true
+                               }
+                               }
+                               },
+                               {
+                               "name": "Task",
+                               "operations": {
+                               "title": true,
+                               "accept": false,
+                               "bid": false,
+                               "reject": false,
+                               "price": false,
+                               "orderId": true,
+                               "orderDate": true,
+                               "dueDate": true,
+                               "address": true,
+                               "priority": false,
+                               "distance": true,
+                               "mapView": true,
+                               "persistUsingOrderId": true,
+                               "partialSave": false,
+                               "details": {
+                               "location": true,
+                               "specialInstructions": true,
+                               "lineItems": false,
+                               "changeRequest": false
+                               },
+                               "filter": {
+                               "priority": false,
+                               "distance": true,
+                               "dueDate": true
+                               },
+                               "performer": {
+                               "mapView": true,
+                               "autoAssign": true
+                               }
+                               }
+                               }
+                               ]
+                    }
+                    ],
+    "userInfo": {
+        "username": "asha.channada@altisource.com",
+        "privileges": [
+                       "PERFORMERS",
+                       "COORDINATORS"
+                       ],
+        "vendorNumbers": [
+                          100654321
+                          ],
+        "vendorUserId": "asha.channada@altisource.com",
+        "vendorDetails": {
+            "clients": "Market Place 2,RT-REIS",
+            "vendor_type": "Inspection Vendor,Marketplace 2.0"
+        }
+    },
+    "appInfo": {
+        "vendorCredentials": false,
+        "timeOut": "60",
+        "minClientVersion": "2.0.1"
+    }
+}
+}

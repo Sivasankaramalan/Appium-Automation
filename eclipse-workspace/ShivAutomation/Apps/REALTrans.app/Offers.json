@@ -1,0 +1,156 @@
+[
+ {
+ "offerId": "abcdefgh-881b-427c-9af0-abc123def456",
+ "orderNumber": "Order #1",
+ "productName": "BPO",
+ "productType": "OBPO",
+ "propertyAddress": {
+ "address1": "5120 Meridian Lane",
+ "address2": "5120 Meridian Lane2",
+ "city": "Alpharetta",
+ "state": null,
+ "stateCode": "GA",
+ "zip": "30022",
+ "geo": {
+ "latitude": 34.0629,
+ "longitude": -85.2096
+ }
+ },
+ "dueDate": "2015-03-17T14:30:00.000-04:00",
+ "orderedDate": "2015-03-10T13:10:00.000-04:00",
+ "price": 30.50,
+ "priority": 1
+ },
+ {
+ "offerId": "abcdefgh-881b-427c-9af0-abc123def456",
+ "orderNumber": "Order #2",
+ "productName": "INSPECTION",
+ "productType": "QCI",
+ "propertyAddress": {
+ "address1": "5120 Meridian Lane",
+ "address2": "",
+ "city": "Alpharetta",
+ "state": null,
+ "stateCode": "GA",
+ "zip": "30022",
+ "geo": {
+ "latitude": 34.0629,
+ "longitude": -85.2096
+ }
+ },
+ "dueDate": "2015-03-17T14:30:00.000-04:00",
+ "orderedDate": "2015-03-10T13:10:00.000-04:00",
+ "price": 30.50,
+ "priority": 1
+ },
+ {
+ "offerId": "abcdefgh-881b-427c-9af0-abc123def457",
+ "orderNumber": "Order #3",
+ "productName": "Occupancy Inspection",
+ "productType": "OCMA",
+ "propertyAddress": {
+ "address1": "5121 Meridian Lane",
+ "address2": "",
+ "city": "Athens",
+ "state": null,
+ "stateCode": "GA",
+ "zip": "30022",
+ "geo": {
+ "latitude": 35.0329,
+ "longitude": -83.2096
+ }
+ },
+ "dueDate": "2016-03-10T13:10:00.000-04:00",
+ "orderedDate": "2015-03-09T13:10:00.000-04:00",
+ "price": 40.75,
+ "priority": 5
+ },
+ {
+ "offerId": "abcdefgh-881b-427c-9af0-abc123def458",
+ "orderNumber": "Order #3",
+ "productName": "Complete Inspection",
+ "productType": "OCMA",
+ "propertyAddress": {
+ "address1": "5122 Meridian Lane",
+ "address2": "",
+ "city": "Knoxville",
+ "state": null,
+ "stateCode": "GA",
+ "zip": "30022",
+ "geo": {
+ "latitude": 36.0349,
+ "longitude": -84.2096
+ }
+ },
+ "dueDate": "2015-03-18T13:10:00.000-04:00",
+ "orderedDate": "2015-03-10T13:10:00.000-04:00",
+ "price": 40.00,
+ "priority": 2
+ },
+ {
+ "offerId": "abcdefgh-881b-427c-9af0-abc123def459",
+ "orderNumber": "Order #4",
+ "productName": "Complete Inspection",
+ "productType": "OCMA",
+ "propertyAddress": {
+ "address1": "5123 Meridian Lane",
+ "address2": "",
+ "city": "Alpharetta",
+ "state": null,
+ "stateCode": "GA",
+ "zip": "30022",
+ "geo": {
+ "latitude": 37.0129,
+ "longitude": -87.2096
+ }
+ },
+ "dueDate": "2015-04-10T13:10:00.000-04:00",
+ "orderedDate": "2015-03-10T13:10:00.000-04:00",
+ "price": 40.25,
+ "priority": 2
+ },
+ {
+ "offerId": "abcdefgh-881b-427c-9af0-abc123def460",
+ "orderNumber": "Order #5",
+ "productName": "Complete Inspection",
+ "productType": "OCMA",
+ "propertyAddress": {
+ "address1": "5124 Meridian Lane",
+ "address2": "",
+ "city": "Alpharetta",
+ "state": null,
+ "stateCode": "GA",
+ "zip": "30022",
+ "geo":{
+ "latitude": 30.0329,
+ "longitude": -89.2096
+ }
+ },
+ "dueDate": "2014-06-10T13:10:00.000-04:00",
+ "orderedDate": "2015-03-10T13:10:00.000-04:00",
+ "price": 40.50,
+ "priority": 2
+ },
+ {
+ "offerId": "abcdefgh-881b-427c-9af0-abc123def461",
+ "orderNumber": "Order #6",
+ "productName": "Complete Inspection",
+ "productType": "OCMA",
+ "propertyAddress": {
+ "address1": "5125 Meridian Lane",
+ "address2": "",
+ "city": "Alpharetta",
+ "state": null,
+ "stateCode": "GA",
+ "zip": "30022",
+ "geo" :{
+ "latitude": 36.0329,
+ "longitude": -88.206
+ }
+ },
+ "dueDate": "2015-05-10T13:10:00.000-04:00",
+ "orderedDate": "2015-03-10T13:10:00.000-04:00",
+ "price": 40.75,
+ "priority": 2
+ }
+ ]

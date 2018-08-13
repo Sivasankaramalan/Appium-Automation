@@ -1,0 +1,3568 @@
+{
+  "sections": [
+    {
+      "code": "ICMA_TASK_CA_MOBILE_S1",
+      "displayText": "Details",
+      "status": "UNVISITED",
+      "pages": [
+        {
+          "code": "ICMA_TASK_CA_MOBILE_S1_P1",
+          "name": "DETAILS",
+          "questionGroups": [
+            {
+              "type": "NORMAL",
+              "headerQuestion": "EXTERIOR INSPECTION - NEIGHBORHOOD",
+              "questions": [
+                {
+                  "type": "NONE",
+                  "displayText": "Location",
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarLocation",
+                        "dataType": "STRING",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "optionItems": [
+                            {
+                              "code": "SUBURBANLOCATION",
+                              "name": "Suburban",
+                              "key": "SUBURBANLOCATION",
+                              "label": "Suburban"
+                            },
+                            {
+                              "code": "RURALLOCATION",
+                              "name": "Rural",
+                              "key": "RURALLOCATION",
+                              "label": "Rural"
+                            },
+                            {
+                              "code": "URBANLOCATION",
+                              "name": "Urban",
+                              "key": "URBANLOCATION",
+                              "label": "Urban"
+                            }
+                          ]
+                        }
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "NONE",
+                  "displayText": "Zoning Compliance",
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarZoningCompliance",
+                        "dataType": "STRING",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "type": "STATIC",
+                          "fetchType": "AUTO",
+                          "optionItems": [
+                            {
+                              "code": "LEGALZONING",
+                              "name": "Legal",
+                              "key": "LEGALZONING",
+                              "label": "Legal"
+                            },
+                            {
+                              "code": "NONCONFZONING",
+                              "name": "Legal Non Conforming",
+                              "key": "NONCONFZONING",
+                              "label": "Legal Non Conforming"
+                            },
+                            {
+                              "code": "NOZONINGZONING",
+                              "name": "No Zoning",
+                              "key": "NOZONINGZONING",
+                              "label": "No Zoning"
+                            },
+                            {
+                              "code": "ILLEGALZONING",
+                              "name": "Illegal",
+                              "key": "ILLEGALZONING",
+                              "label": "Illegal"
+                            }
+                          ]
+                        }
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "NONE",
+                  "displayText": "No. of Boarded Homes",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarBoardedHomes",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "REGEX_VALIDATOR",
+                            "regex": "^[0-9]+$",
+                            "message": "'No. of Boarded Homes' should not be decimal or negative value"
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "NONE",
+                  "displayText": "No. of Vacant Homes",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarVacantHomes",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "REGEX_VALIDATOR",
+                            "regex": "^[0-9]+$",
+                            "message": "'No. of Vacant Homes' should not be decimal or negative value"
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "NONE",
+                  "displayText": "No. of Units in Project",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarNumOfUnits",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "REGEX_VALIDATOR",
+                            "regex": "^[0-9]+$",
+                            "message": "'No. of Units in Project' should not be decimal or negative value"
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "NONE",
+                  "displayText": "No. of Competing Listings in Neighborhood",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarNumOfCompetingListings",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "REGEX_VALIDATOR",
+                            "regex": "^[0-9]+$",
+                            "message": "'No. of Competing Listings in Neighborhood' should not be decimal or negative value"
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "NONE",
+                  "displayText": "No. of Units for Sale in Project",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarNumOfUnitsForSaleInProject",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "REGEX_VALIDATOR",
+                            "regex": "^[0-9]+$",
+                            "message": "'No. of Units for Sale in Project' should not be decimal or negative value"
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+                            "code": "f2bc8550-2509-4c9d-86bb-7a89afbd2171",
+                            "name": "f2bc8550-2509-4c9d-86bb-7a89afbd2171",
+                            "order": 1,
+                            "questions": [
+                                {
+                                    "code": "9ff06090-1a10-4cd7-adcd-550402f69070",
+                                    "order": 1,
+                                    "controls": [
+                                        {
+                                            "code": "SINGLE_CHOICE",
+                                            "name": "SINGLE_CHOICE",
+                                            "type": "SINGLE_CHOICE",
+                                            "boundVariable": {
+                                                "code": "VarPotentialRepairs",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "1d32f2ca-009e-4dd2-a699-2088aa3fadb0",
+                                                        "name": "1d32f2ca-009e-4dd2-a699-2088aa3fadb0",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "optionsList": {
+                                                    "code": "a3fa27f9-5364-44d6-8e5f-37aabb704fac",
+                                                    "optionItems": [
+                                                        {
+                                                            "code": "Yes",
+                                                            "name": "Yes",
+                                                            "key": "Yes",
+                                                            "label": "Yes"
+                                                        },
+                                                        {
+                                                            "code": "No",
+                                                            "name": "No",
+                                                            "key": "No",
+                                                            "label": "No"
+                                                        }
+                                                    ]
+                                                },
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "BINARY",
+                                                "templateType": "STATE",
+                                                "requirePhoto": false,
+                                                "toggleSubQuestions": true,
+                                                "requireComment": false,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": false,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Does the Property require any potential repairs?"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarPainting",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "ba496c56-63d7-4a3d-9a84-53f65f61f445",
+                                                        "name": "ba496c56-63d7-4a3d-9a84-53f65f61f445",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Paintings(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarFoundation",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "712b6653-1986-4087-955c-ba3d7941809a",
+                                                        "name": "712b6653-1986-4087-955c-ba3d7941809a",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Foundation(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarRepairLandscaping",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "7b45c954-3b1b-436d-97d5-cb6c12d0105d",
+                                                        "name": "7b45c954-3b1b-436d-97d5-cb6c12d0105d",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Landscaping(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarRoof",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "43e8d846-ec23-487c-aa41-e57105f8dfc7",
+                                                        "name": "43e8d846-ec23-487c-aa41-e57105f8dfc7",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Roof(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarWindows",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "040c1676-c6b5-426c-b163-84a3a777cbe5",
+                                                        "name": "040c1676-c6b5-426c-b163-84a3a777cbe5",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Windows(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarOther",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "fa64635d-e50c-4643-9100-a006fad56c33",
+                                                        "name": "fa64635d-e50c-4643-9100-a006fad56c33",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Other(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarPool",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "6c3b6a29-cfeb-4ee9-bcd3-14fb5b399240",
+                                                        "name": "6c3b6a29-cfeb-4ee9-bcd3-14fb5b399240",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Pool(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarCleaningOrTrashRemoval",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "b62aab37-3c46-48fe-b0c5-75f2b038dee8",
+                                                        "name": "b62aab37-3c46-48fe-b0c5-75f2b038dee8",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "INTEGER"
+                                            },
+                                            "attributes": {
+                                                "variant": "SINGLE_LINE",
+                                                "keypad": "NUMBERPAD",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": true,
+                                                "mandatoryPhoto": false,
+                                                "multiplePhoto": false,
+                                                "mandatoryComment": true,
+                                                "photoCommentRequired": false,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": false,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Cleaning/Trash Removal(Cost in USD)"
+                                        },
+                                        {
+                                            "code": "TEXTFIELD",
+                                            "name": "TEXTFIELD",
+                                            "type": "TEXTFIELD",
+                                            "boundVariable": {
+                                                "code": "VarAddRepairPhoto",
+                                                "validators": [
+                                                    {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "0ec57d09-278c-4749-a13d-0493ade95eb6",
+                                                        "name": "0ec57d09-278c-4749-a13d-0493ade95eb6",
+                                                        "mandatory": true
+                                                    }
+                                                ],
+                                                "dataType": "STRING"
+                                            },
+                                            "attributes": {
+                                                "variant": "QA_PHOTOS",
+                                                "templateType": "QA",
+                                                "requirePhoto": true,
+                                                "toggleSubQuestions": false,
+                                                "requireComment": false,
+                                                "mandatoryPhoto": true,
+                                                "multiplePhoto": true,
+                                                "mandatoryComment": false,
+                                                "photoCommentRequired": true,
+                                                "photoCommentMandatory": false,
+                                                "isPhotoCommentRequired": true,
+                                                "isPhotoCommentMandatory": false
+                                            },
+                                            "displayText": "Repair Photo(s)"
+                                        }
+                                    ],
+                                    "displayText": "Repairs and Improvements",
+                                    "type": "COMPOSITE"
+                                }
+                            ],
+                            "type": "NORMAL",
+                            "headerQuestion": "POTENTIAL REPAIRS"
+                        },
+            {
+              "type": "NORMAL",
+              "questions": [
+                            {
+                            "code": "13828d3c-fce3-404e-9182-2fcf69f677a6",
+                            "controls": [
+                                         {
+                                         "code": "SINGLE_CHOICE",
+                                         "name": "SINGLE_CHOICE",
+                                         "type": "SINGLE_CHOICE",
+                                         "boundVariable": {
+                                         "code": "VarCurrentListed",
+                                         "validators": [
+                                                        {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "71f38c05-9862-4c9f-ba8f-2e2e66e1fdec",
+                                                        "name": "71f38c05-9862-4c9f-ba8f-2e2e66e1fdec",
+                                                        "mandatory": true
+                                                        }
+                                                        ],
+                                         "optionsList": {
+                                         "code": "675b61bf-5425-4bab-bf63-7c2b7aa55042",
+                                         "optionItems": [
+                                                         {
+                                                         "code": "Yes",
+                                                         "name": "Yes",
+                                                         "key": "Yes",
+                                                         "label": "Yes"
+                                                         },
+                                                         {
+                                                         "code": "No",
+                                                         "name": "No",
+                                                         "key": "No",
+                                                         "label": "No"
+                                                         }
+                                                         ]
+                                         },
+                                         "dataType": "STRING"
+                                         },
+                                         "attributes": {
+                                         "variant": "BINARY",
+                                         "templateType": "STATE",
+                                         "requirePhoto": false,
+                                         "toggleSubQuestions": true,
+                                         "requireComment": false,
+                                         "mandatoryPhoto": false,
+                                         "multiplePhoto": false,
+                                         "mandatoryComment": false,
+                                         "photoCommentRequired": false,
+                                         "photoCommentMandatory": false,
+                                         "isPhotoCommentRequired": false,
+                                         "isPhotoCommentMandatory": false
+                                         },
+                                         "displayText": "Currently Listed?"
+                                         },
+                                         {
+                                         "code": "OPTIONS_LIST",
+                                         "name": "OPTIONS_LIST",
+                                         "type": "OPTIONS_LIST",
+                                         "boundVariable": {
+                                         "code": "VarCurrentPropertyStatus",
+                                         "validators": [
+                                                        {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "94c512a0-986b-4029-8860-56415836f473",
+                                                        "name": "94c512a0-986b-4029-8860-56415836f473",
+                                                        "mandatory": false
+                                                        }
+                                                        ],
+                                         "optionsList": {
+                                         "code": "153ed742-fabc-4a50-9644-75348953334a",
+                                         "optionItems": [
+                                                         {
+                                                         "code": "CURRENTLY_LISTED",
+                                                         "name": "CURRENTLY_LISTED",
+                                                         "key": "CURRENTLY_LISTED",
+                                                         "label": "Currently Listed"
+                                                         },
+                                                         {
+                                                         "code": "CONTINGENT",
+                                                         "name": "CONTINGENT",
+                                                         "key": "CONTINGENT",
+                                                         "label": "Contingent"
+                                                         },
+                                                         {
+                                                         "code": "PENDING",
+                                                         "name": "PENDING",
+                                                         "key": "PENDING",
+                                                         "label": "Pending"
+                                                         },
+                                                         {
+                                                         "code": "WITHDRAWN",
+                                                         "name": "WITHDRAWN",
+                                                         "key": "WITHDRAWN",
+                                                         "label": "Withdrawn"
+                                                         },
+                                                         {
+                                                         "code": "EXPIRED",
+                                                         "name": "EXPIRED",
+                                                         "key": "EXPIRED",
+                                                         "label": "Expired"
+                                                         },
+                                                         {
+                                                         "code": "SOLD",
+                                                         "name": "SOLD",
+                                                         "key": "SOLD",
+                                                         "label": "Sold"
+                                                         },
+                                                         {
+                                                         "code": "OFF_MARKET",
+                                                         "name": "OFF_MARKET",
+                                                         "key": "OFF_MARKET",
+                                                         "label": "Off Market"
+                                                         },
+                                                         {
+                                                         "code": "UNKNOWN",
+                                                         "name": "UNKNOWN",
+                                                         "key": "UNKNOWN",
+                                                         "label": "Unknown"
+                                                         }
+                                                         ]
+                                         },
+                                         "dataType": "STRING"
+                                         },
+                                         "attributes": {
+                                         "variant": "NEXT_SCREEN",
+                                         "templateType": "SINGLE_SELECT",
+                                         "requirePhoto": false,
+                                         "toggleSubQuestions": false,
+                                         "requireComment": false,
+                                         "mandatoryPhoto": false,
+                                         "multiplePhoto": false,
+                                         "mandatoryComment": false,
+                                         "photoCommentRequired": false,
+                                         "photoCommentMandatory": false,
+                                         "isPhotoCommentRequired": false,
+                                         "isPhotoCommentMandatory": false
+                                         },
+                                         "displayText": "Current Property Status"
+                                         },
+                                         {
+                                         "code": "TEXTFIELD",
+                                         "name": "TEXTFIELD",
+                                         "type": "TEXTFIELD",
+                                         "boundVariable": {
+                                         "code": "VarAgentName",
+                                         "validators": [
+                                                        {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "b6016090-826d-41bc-bdc4-6a4554603967",
+                                                        "name": "b6016090-826d-41bc-bdc4-6a4554603967",
+                                                        "mandatory": true
+                                                        }
+                                                        ],
+                                         "dataType": "STRING"
+                                         },
+                                         "attributes": {
+                                         "variant": "SINGLE_LINE",
+                                         "keypad": "DEFAULT",
+                                         "templateType": "QA",
+                                         "requirePhoto": false,
+                                         "toggleSubQuestions": false,
+                                         "requireComment": false,
+                                         "mandatoryPhoto": false,
+                                         "multiplePhoto": false,
+                                         "mandatoryComment": false,
+                                         "photoCommentRequired": false,
+                                         "photoCommentMandatory": false,
+                                         "isPhotoCommentRequired": false,
+                                         "isPhotoCommentMandatory": false
+                                         },
+                                         "displayText": "Listing Agent Name"
+                                         },
+                                         {
+                                         "code": "TEXTFIELD",
+                                         "name": "TEXTFIELD",
+                                         "type": "TEXTFIELD",
+                                         "boundVariable": {
+                                         "code": "VarAgentPhone",
+                                         "validators": [
+                                                        {
+                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                        "code": "f0ea746b-afac-48eb-b805-f719ddc53018",
+                                                        "name": "f0ea746b-afac-48eb-b805-f719ddc53018",
+                                                        "mandatory": true
+                                                        }
+                                                        ],
+                                         "formatter": {
+                                         "code": "97d69e13-78ea-4e8c-a4b7-0627ecc757cc",
+                                         "name": "97d69e13-78ea-4e8c-a4b7-0627ecc757cc",
+                                         "type": "FORMATTER_PHONE_NUMBER_US",
+                                         "pattern": "(XXX)XXX-XXXX"
+                                         },
+                                         "dataType": "STRING"
+                                         },
+                                         "attributes": {
+                                         "variant": "SINGLE_LINE",
+                                         "keypad": "NUMBERPAD",
+                                         "templateType": "QA",
+                                         "requirePhoto": false,
+                                         "toggleSubQuestions": false,
+                                         "requireComment": false,
+                                         "mandatoryPhoto": false,
+                                         "multiplePhoto": false,
+                                         "mandatoryComment": false,
+                                         "photoCommentRequired": false,
+                                         "photoCommentMandatory": false,
+                                         "isPhotoCommentRequired": false,
+                                         "isPhotoCommentMandatory": false
+                                         },
+                                         "displayText": "Listing Agent Phone Number"
+                                         }
+                                         ],
+                            "displayText": "Currently Listed",
+                            "type": "COMPOSITE"
+                            },
+                {
+                  "code": "7d41712a-fb24-4534-8c33-9e3c1764d657",
+                  "order": 1,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarOccupancy",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "e1db9263-316a-43d4-8ad5-258f90d0f6d5",
+                            "name": "e1db9263-316a-43d4-8ad5-258f90d0f6d5",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "bc7fae7a-01dc-438a-9c83-48f45ac4cc45",
+                          "optionItems": [
+                            {
+                              "code": "OWNER_OCCUPANCY",
+                              "name": "Owner",
+                              "key": "OWNER_OCCUPANCY",
+                              "label": "Owner"
+                            },
+                            {
+                              "code": "TENANT_OCCUPANCY",
+                              "name": "Tenant",
+                              "key": "TENANT_OCCUPANCY",
+                              "label": "Tenant"
+                            },
+                            {
+                              "code": "VACANT_OCCUPANCY",
+                              "name": "Vacant",
+                              "key": "VACANT_OCCUPANCY",
+                              "label": "Vacant"
+                            },
+                            {
+                              "code": "OCCUPIED_OCCUPANCY",
+                              "name": "Occupied",
+                              "key": "OCCUPIED_OCCUPANCY",
+                              "label": "Occupied"
+                            },
+                            {
+                              "code": "UNKNOWN_OCCUPANCY",
+                              "name": "Unknown",
+                              "key": "UNKNOWN_OCCUPANCY",
+                              "label": "Unknown"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "Occupancy",
+                  "type": "NONE"
+                },
+                {
+                  "displayText": "Weather Conditions",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarWeatherConditions",
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "DEFAULT",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "displayText": "Other Persons Present",
+                  "order": 3,
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarOtherPersonsPresent",
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "DEFAULT",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarFoundationMasonry",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "097b178f-a4a5-47de-be0f-e51c5f8ccc50",
+                            "name": "097b178f-a4a5-47de-be0f-e51c5f8ccc50",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Foundation/Masonry"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarPossibleMold",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "050bda6a-f86d-4122-9a2d-ec6d6bb7f3ef",
+                            "name": "050bda6a-f86d-4122-9a2d-ec6d6bb7f3ef",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Possible Mold"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarVisibleFloodOrWaterRedFlag",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "568dc95f-aa47-4f2e-bad8-0a5814f9cca5",
+                            "name": "568dc95f-aa47-4f2e-bad8-0a5814f9cca5",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Visible Flood/Water Red Flag"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarSeptic",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "aeb38825-c95d-421d-a49d-2caaf7450531",
+                            "name": "aeb38825-c95d-421d-a49d-2caaf7450531",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Septic"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarStructuralRepairs",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "4e3b90e6-0096-4940-9a7d-d6b2ea799f2c",
+                            "name": "4e3b90e6-0096-4940-9a7d-d6b2ea799f2c",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Structural Repairs"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarFireOrRazedOrCondemned",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "41d242f0-2857-4f4f-9a43-7e202f137d6a",
+                            "name": "41d242f0-2857-4f4f-9a43-7e202f137d6a",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Fire/Razed/Condemned"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarVendalizedOrRedFlaged",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "a335cef9-5a56-4b6e-a82a-5111879ce01c",
+                            "name": "a335cef9-5a56-4b6e-a82a-5111879ce01c",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Vandalized/Red Flaged"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarPestInfestation",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "0b717edf-b226-447a-8f2a-ea32af7986d8",
+                            "name": "0b717edf-b226-447a-8f2a-ea32af7986d8",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Pest Infestation"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarEnvironmentalHazard",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "ff34ea7a-756a-47b8-b7a1-d126502472f2",
+                            "name": "ff34ea7a-756a-47b8-b7a1-d126502472f2",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Environmental Hazard"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarZoning",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "c5af75c8-cc5b-4027-87ae-8570bd14e53d",
+                            "name": "c5af75c8-cc5b-4027-87ae-8570bd14e53d",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Zoning"
+                    },
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarStigma",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "f4c6fa5b-563f-4347-81ec-f0a84ded0c41",
+                            "name": "f4c6fa5b-563f-4347-81ec-f0a84ded0c41",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Stigma"
+                    }
+                  ],
+                  "displayText": "Subject Impacted by",
+                  "type": "COMPOSITE"
+                }
+              ],
+              "headerQuestion": "EXTERIOR INSPECTION - SUBJECT PROPERTY"
+            },
+            {
+              "type": "NORMAL",
+              "questions": [
+                {
+                  "code": "93a1d9b1-8ed8-49ea-b0fb-0637e439ef57",
+                  "order": 1,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarPropType",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "d4cffcaf-fb1d-4924-ae82-f8a7da0841a4",
+                            "name": "d4cffcaf-fb1d-4924-ae82-f8a7da0841a4",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "98ddc3f9-773d-41c6-a5a8-5b2a0d00f084",
+                          "optionItems": [
+                            {
+                              "code": "CONDOMINIUMPROPERTYTYPE",
+                              "name": "Condo",
+                              "key": "CONDOMINIUMPROPERTYTYPE",
+                              "label": "Condo"
+                            },
+                            {
+                              "code": "MULTIFAMILYPROPERTYTYPE",
+                              "name": "Multifamily (5 & 6 Units)",
+                              "key": "MULTIFAMILYPROPERTYTYPE",
+                              "label": "Multifamily (5 & 6 Units)"
+                            },
+                            {
+                              "code": "MANUFACTUREDPROPERTYTYPE",
+                              "name": "Mobile Home",
+                              "key": "MANUFACTUREDPROPERTYTYPE",
+                              "label": "Mobile Home"
+                            },
+                            {
+                              "code": "SFRPROPERTYTYPE",
+                              "name": "Single Family Residence",
+                              "key": "SFRPROPERTYTYPE",
+                              "label": "Single Family Residence"
+                            },
+                            {
+                              "code": "DUPLEXPROPERTYTYPE",
+                              "name": "Duplex",
+                              "key": "DUPLEXPROPERTYTYPE",
+                              "label": "Duplex"
+                            },
+                            {
+                              "code": "TRIPLEXPROPERTYTYPE",
+                              "name": "Triplex",
+                              "key": "TRIPLEXPROPERTYTYPE",
+                              "label": "Triplex"
+                            },
+                            {
+                              "code": "QUADPROPERTYTYPE",
+                              "name": "4-Plex",
+                              "key": "QUADPROPERTYTYPE",
+                              "label": "4-Plex"
+                            },
+                            {
+                              "code": "LANDANDLOTSPROPERTYTYPE",
+                              "name": "Land Only",
+                              "key": "LANDANDLOTSPROPERTYTYPE",
+                              "label": "Land Only"
+                            },
+                            {
+                              "code": "OTHERSPROPERTYTYPE",
+                              "name": "Others",
+                              "key": "OTHERSPROPERTYTYPE",
+                              "label": "Others"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "Property Type",
+                  "type": "NONE"
+                },
+                {
+                  "code": "724ffc68-a969-4287-8148-09a1fc298be9",
+                  "order": 4,
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "name": "TEXTFIELD",
+                      "type": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarPropTypeOther",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "61eb8de8-1f1f-4043-ac86-816f81e31ef0",
+                            "name": "61eb8de8-1f1f-4043-ac86-816f81e31ef0",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "templateType": "QA",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Provide Description (If Above Property Type is 'Others')"
+                    }
+                  ],
+                  "displayText": "Provide Description (If 'Property Type' is 'Others')",
+                  "type": "NONE"
+                },
+                {
+                  "code": "d6a30ea2-fcea-49d1-b1b5-129eec8f6526",
+                  "order": 4,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarView",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "2a60112a-a073-4c90-96dd-a1257ddbc94c",
+                            "name": "2a60112a-a073-4c90-96dd-a1257ddbc94c",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "078a6bbf-bffc-451e-ac7c-5e2789adff80",
+                          "optionItems": [
+                            {
+                              "code": "TYPICALVIEW",
+                              "name": "Typical",
+                              "key": "TYPICALVIEW",
+                              "label": "Typical"
+                            },
+                            {
+                              "code": "GOLFCOURSEVIEW",
+                              "name": "Golf Course",
+                              "key": "GOLFCOURSEVIEW",
+                              "label": "Golf Course"
+                            },
+                            {
+                              "code": "WATERVIEWVIEW",
+                              "name": "Water",
+                              "key": "WATERVIEWVIEW",
+                              "label": "Water"
+                            },
+                            {
+                              "code": "MOUNTAINVIEW",
+                              "name": "Mountain",
+                              "key": "MOUNTAINVIEW",
+                              "label": "Mountain"
+                            },
+                            {
+                              "code": "CITYVIEW",
+                              "name": "City",
+                              "key": "CITYVIEW",
+                              "label": "City"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "View",
+                  "type": "NONE"
+                },
+                {
+                  "code": "132780bd-058c-43d0-aaab-8d18d508e6e7",
+                  "order": 5,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarNumUnits",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "0068d60d-99b0-426b-95a8-b76b06a16af6",
+                            "name": "0068d60d-99b0-426b-95a8-b76b06a16af6",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "b4721f6b-81bc-4aca-b0c7-9f058e8743c2",
+                          "optionItems": [
+                            {
+                              "code": "1UNITSNUM",
+                              "name": "1",
+                              "key": "1UNITSNUM",
+                              "label": "1"
+                            },
+                            {
+                              "code": "2UNITSNUM",
+                              "name": "2",
+                              "key": "2UNITSNUM",
+                              "label": "2"
+                            },
+                            {
+                              "code": "3UNITSNUM",
+                              "name": "3",
+                              "key": "3UNITSNUM",
+                              "label": "3"
+                            },
+                            {
+                              "code": "4UNITSNUM",
+                              "name": "4",
+                              "key": "4UNITSNUM",
+                              "label": "4"
+                            },
+                            {
+                              "code": "5UNITSNUM",
+                              "name": "5",
+                              "key": "5UNITSNUM",
+                              "label": "5"
+                            },
+                            {
+                              "code": "6UNITSNUM",
+                              "name": "6",
+                              "key": "6UNITSNUM",
+                              "label": "6"
+                            },
+                            {
+                              "code": "OTHERUNITSNUM",
+                              "name": "Other",
+                              "key": "OTHERUNITSNUM",
+                              "label": "Other"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "# of Units",
+                  "type": "NONE"
+                },
+                {
+                  "code": "1c3f9e2f-8a40-42b4-b95f-3de15f300c52",
+                  "order": 6,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarDesignStyle",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "d9a04dc4-4023-437a-94c0-2090ff19639e",
+                            "name": "d9a04dc4-4023-437a-94c0-2090ff19639e",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "d8eed739-ec45-4d18-8d75-00c6f64f5a3b",
+                          "optionItems": [
+                            {
+                              "code": "RANCHDESIGN",
+                              "name": "1 - Ranch",
+                              "key": "RANCHDESIGN",
+                              "label": "1 - Ranch"
+                            },
+                            {
+                              "code": "MULTILEVELDESIGN",
+                              "name": "2 - Multi Level",
+                              "key": "MULTILEVELDESIGN",
+                              "label": "2 - Multi Level"
+                            },
+                            {
+                              "code": "COLONIALDESIGN",
+                              "name": "3 - Colonial",
+                              "key": "COLONIALDESIGN",
+                              "label": "3 - Colonial"
+                            },
+                            {
+                              "code": "CONTEMPORARYDESIGN",
+                              "name": "4 - Contemporary",
+                              "key": "CONTEMPORARYDESIGN",
+                              "label": "4 - Contemporary"
+                            },
+                            {
+                              "code": "TRADITIONALDESIGN",
+                              "name": "5 - Traditional",
+                              "key": "TRADITIONALDESIGN",
+                              "label": "5 - Traditional"
+                            },
+                            {
+                              "code": "ROWHOUSEDESIGN",
+                              "name": "6 - Rowhouse",
+                              "key": "ROWHOUSEDESIGN",
+                              "label": "6 - Rowhouse"
+                            },
+                            {
+                              "code": "TOWNHOUSEDESIGN",
+                              "name": "7 - Townhouse",
+                              "key": "TOWNHOUSEDESIGN",
+                              "label": "7 - Townhouse"
+                            },
+                            {
+                              "code": "CAPECODDESIGN",
+                              "name": "8 - Cape Cod",
+                              "key": "CAPECODDESIGN",
+                              "label": "8 - Cape Cod"
+                            },
+                            {
+                              "code": "SPLITDESIGN",
+                              "name": "9 - Split",
+                              "key": "SPLITDESIGN",
+                              "label": "9 - Split"
+                            },
+                            {
+                              "code": "RAISEDRANCHDESIGN",
+                              "name": "10 - Raised Ranch",
+                              "key": "RAISEDRANCHDESIGN",
+                              "label": "10 - Raised Ranch"
+                            },
+                            {
+                              "code": "VICTORIANDESIGN",
+                              "name": "11 - Victorian",
+                              "key": "VICTORIANDESIGN",
+                              "label": "11 - Victorian"
+                            },
+                            {
+                              "code": "CONDOMINIUMDESIGN",
+                              "name": "12 - Condominium",
+                              "key": "CONDOMINIUMDESIGN",
+                              "label": "12 - Condominium"
+                            },
+                            {
+                              "code": "MULTIFAMILYDESIGN",
+                              "name": "13 - Multi-Family",
+                              "key": "MULTIFAMILYDESIGN",
+                              "label": "13 - Multi-Family"
+                            },
+                            {
+                              "code": "MANUFACTUREDDESIGN",
+                              "name": "14 - Manufactured",
+                              "key": "MANUFACTUREDDESIGN",
+                              "label": "14 - Manufactured"
+                            },
+                            {
+                              "code": "MOBILEDESIGN",
+                              "name": "15 - Mobile",
+                              "key": "MOBILEDESIGN",
+                              "label": "15 - Mobile"
+                            },
+                            {
+                              "code": "MODULARDESIGN",
+                              "name": "16 - Modular",
+                              "key": "MODULARDESIGN",
+                              "label": "16 - Modular"
+                            },
+                            {
+                              "code": "OTHERDESIGN",
+                              "name": "17 - Other",
+                              "key": "OTHERDESIGN",
+                              "label": "17 - Other"
+                            },
+                            {
+                              "code": "CABINDESIGN",
+                              "name": "18 - Cabin",
+                              "key": "CABINDESIGN",
+                              "label": "18 - Cabin"
+                            },
+                            {
+                              "code": "BROWNSTONEDESIGN",
+                              "name": "19 - Brownstone",
+                              "key": "BROWNSTONEDESIGN",
+                              "label": "19 - Brownstone"
+                            },
+                            {
+                              "code": "BUNGALOWDESIGN",
+                              "name": "20 - Bungalow",
+                              "key": "BUNGALOWDESIGN",
+                              "label": "20 - Bungalow"
+                            },
+                            {
+                              "code": "COTTAGEDESIGN",
+                              "name": "21 - Cottage",
+                              "key": "COTTAGEDESIGN",
+                              "label": "21 - Cottage"
+                            },
+                            {
+                              "code": "MANSIONDESIGN",
+                              "name": "22 - Mansion",
+                              "key": "MANSIONDESIGN",
+                              "label": "22 - Mansion"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "Design Style",
+                  "type": "NONE"
+                },
+                {
+                  "code": "48cd3e97-ce1e-44cd-9ba6-d34fd5b85ea2",
+                  "order": 7,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarCondition",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "14feef4c-a8ad-40ac-aa2b-10712b403533",
+                            "name": "14feef4c-a8ad-40ac-aa2b-10712b403533",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "da242396-df87-4cc8-bb91-bdf91bb3e461",
+                          "optionItems": [
+                            {
+                              "code": "NEW",
+                              "name": "C1-New",
+                              "key": "NEW",
+                              "label": "C1-New"
+                            },
+                            {
+                              "code": "GOODCONDITION",
+                              "name": "C2-Very Good",
+                              "key": "GOODCONDITION",
+                              "label": "C2-Very Good"
+                            },
+                            {
+                              "code": "AVERAGECONDITION",
+                              "name": "C3-Average",
+                              "key": "AVERAGECONDITION",
+                              "label": "C3-Average"
+                            },
+                            {
+                              "code": "FAIRCONDITION",
+                              "name": "C4-Below Average",
+                              "key": "FAIRCONDITION",
+                              "label": "C4-Below Average"
+                            },
+                            {
+                              "code": "POORCONDITION",
+                              "name": "C5-Poor",
+                              "key": "POORCONDITION",
+                              "label": "C5-Poor"
+                            },
+                            {
+                              "code": "UNINHABITABLECONDITION",
+                              "name": "C6-Uninhabitable",
+                              "key": "UNINHABITABLECONDITION",
+                              "label": "C6-Uninhabitable"
+                            },
+                            {
+                              "code": "NA",
+                              "name": "Not Applicable",
+                              "key": "NA",
+                              "label": "Not Applicable"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "Condition",
+                  "type": "NONE"
+                },
+                {
+                  "code": "b3b96de6-0152-46f6-a987-2ecb9ca4f0f6",
+                  "order": 8,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarGaragePort",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "f4bb88e8-1342-40f2-a585-cbdf370c8ba8",
+                            "name": "f4bb88e8-1342-40f2-a585-cbdf370c8ba8",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "49541eb7-cbfa-475e-90ce-d5235f1c0704",
+                          "optionItems": [
+                            {
+                              "code": "NONEGARAGE",
+                              "name": "None",
+                              "key": "NONEGARAGE",
+                              "label": "None"
+                            },
+                            {
+                              "code": "ATTACHEDGARAGE",
+                              "name": "Attached",
+                              "key": "ATTACHEDGARAGE",
+                              "label": "Attached"
+                            },
+                            {
+                              "code": "DETACHEDGARAGE",
+                              "name": "Detached",
+                              "key": "DETACHEDGARAGE",
+                              "label": "Detached"
+                            },
+                            {
+                              "code": "CARPORTGARAGE",
+                              "name": "Carport",
+                              "key": "CARPORTGARAGE",
+                              "label": "Carport"
+                            },
+                            {
+                              "code": "ATTACHEDDETACHEDGARAGE",
+                              "name": "Attached+Detached",
+                              "key": "ATTACHEDDETACHEDGARAGE",
+                              "label": "Attached+Detached"
+                            },
+                            {
+                              "code": "ATTACHEDCARPORTGARAGE",
+                              "name": "Attached+Carport",
+                              "key": "ATTACHEDCARPORTGARAGE",
+                              "label": "Attached+Carport"
+                            },
+                            {
+                              "code": "DETACHEDCARPORTGARAGE",
+                              "name": "Detached+Carport",
+                              "key": "DETACHEDCARPORTGARAGE",
+                              "label": "Detached+Carport"
+                            },
+                            {
+                              "code": "NA",
+                              "name": "Not Applicable",
+                              "key": "NA",
+                              "label": "Not Applicable"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "Garage/Carport",
+                  "type": "NONE"
+                },
+                {
+                  "code": "b52276b8-bd39-4ba6-a649-682c57f4126e",
+                  "order": 9,
+                  "controls": [
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarBasement",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "bf9b8cb6-36d0-4630-9ab0-d169faa235a3",
+                            "name": "bf9b8cb6-36d0-4630-9ab0-d169faa235a3",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "f153a26b-97aa-49a5-a6d6-10ba82aa4299",
+                          "optionItems": [
+                            {
+                              "code": "NOBASEMENT",
+                              "name": "No Basement",
+                              "key": "NOBASEMENT",
+                              "label": "No Basement"
+                            },
+                            {
+                              "code": "PARTIALLYFINISHEDBASEMENT",
+                              "name": "Partially Finished Basement",
+                              "key": "PARTIALLYFINISHEDBASEMENT",
+                              "label": "Partially Finished Basement"
+                            },
+                            {
+                              "code": "FULLYFINISHEDBASEMENT",
+                              "name": "Fully Finished Basement",
+                              "key": "FULLYFINISHEDBASEMENT",
+                              "label": "Fully Finished Basement"
+                            },
+                            {
+                              "code": "UNFINISHEDBASEMENT",
+                              "name": "Unfinished Basement",
+                              "key": "UNFINISHEDBASEMENT",
+                              "label": "Unfinished Basement"
+                            },
+                            {
+                              "code": "NA",
+                              "name": "Not Applicable",
+                              "key": "NA",
+                              "label": "Not Applicable"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "NEXT_SCREEN",
+                        "templateType": "SINGLE_SELECT",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "Basement",
+                  "type": "NONE"
+                }
+              ],
+              "headerQuestion": "OTHER ASSESMENT"
+            },
+            {
+              "type": "NORMAL",
+              "questions": [
+                {
+                  "displayText": "Total",
+                  "type": "NONE",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarAbvGrdTotalCount",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "1",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "displayText": "Bedrooms",
+                  "type": "NONE",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarAbvGrdBedRoomsCount",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "displayText": "Full Baths",
+                  "type": "NONE",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarAbvGrdFullBathCount",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "displayText": "Half Baths",
+                  "type": "NONE",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarAbvGrdHalfBathCount",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "9999999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "displayText": "Gross living area",
+                  "type": "NONE",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarGrossArea",
+                        "dataType": "INTEGER",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "1",
+                            "maxValue": "99999"
+                          }
+                        ]
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "NUMBERPAD",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "displayText": "Other Amenities",
+                  "type": "NONE",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarOthAmneties",
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "DEFAULT",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "displayText": "COMMENTS",
+                  "type": "NONE",
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarComments",
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "MULTI_LINE",
+                        "keypad": "DEFAULT",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ]
+                }
+              ],
+              "headerQuestion": "ABOVE GRADE ROOM COUNT"
+            },
+            {
+              "type": "NORMAL",
+              "questions": [
+                {
+                  "controls": [
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_ExteriorFrontView",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "0ac800f2-3c1a-42b8-8b93-da906ce86a2d",
+                            "name": "0ac800f2-3c1a-42b8-8b93-da906ce86a2d",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Front View"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_ExteriorRearView",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "ce161998-7a7b-4745-8b6d-193f2a328fb9",
+                            "name": "ce161998-7a7b-4745-8b6d-193f2a328fb9",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Rear View"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_ExteriorStreetView",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "name": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Street View"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarAirConditionerCondenserPresent",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "name": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Air Conditioner Condenser Present"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarGarageParking",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "name": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Garage/Parking (excluding common areas)"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarExteriorBuildingandYard",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "name": "d8f6e481-57c9-4065-93e7-eba80e8fff17",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Exterior Building and Yard-Front/Sides/Back"
+                    }
+                  ],
+                  "displayText": "Exterior Inspection Photos",
+                  "type": "COMPOSITE_PHOTO_GRID"
+                }
+              ],
+              "headerQuestion": "EXTERIOR INSPECTION - PHOTOS"
+            },
+            {
+              "type": "NORMAL",
+              "questions": [
+                {
+                  "controls": [
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorBasement",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "f01635f1-f659-4fd9-989b-f98a02fa84ba",
+                            "name": "f01635f1-f659-4fd9-989b-f98a02fa84ba",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Basement"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorPhoto-1",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "0069d81c-b406-45c6-b26f-2cf010592196",
+                            "name": "0069d81c-b406-45c6-b26f-2cf010592196",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Interior Photo 1"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorPhoto-2",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "5709e003-1686-470f-b568-c6dbebc7f873",
+                            "name": "5709e003-1686-470f-b568-c6dbebc7f873",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Interior Photo 2"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorPhoto-3",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "37159b84-e699-4db6-98c4-8a6037e8e226",
+                            "name": "37159b84-e699-4db6-98c4-8a6037e8e226",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Interior Photo 3"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorPhoto-4",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "576a289c-e25f-44a7-9526-5f322ac3480b",
+                            "name": "576a289c-e25f-44a7-9526-5f322ac3480b",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Interior Photo 4"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorPhoto-5",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "db0b18ae-a9e7-4249-b876-7f5eaf033ade",
+                            "name": "db0b18ae-a9e7-4249-b876-7f5eaf033ade",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Interior Photo 5"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorPhoto-6",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "4915683c-7b59-4baf-80bb-11af5d81f577",
+                            "name": "4915683c-7b59-4baf-80bb-11af5d81f577",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Interior Photo 6"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarEntry",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Entry (Excluding Common Areas)"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarLivingRoom",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Living Room"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarDiningRoom",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Dining Room"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarKitchen",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Kitchen"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarHallStairs",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Hall/Stairs"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarBedroom1",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Bedroom #1"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarBedroom2",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Bedroom #2"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarBedroom3",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Bedroom #3"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarBath1",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Bath #1"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarBath2",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Bath #2"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarBath3",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Bath #3"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarOtherRoom1",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Other Room #1"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarOtherRoom2",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Other Room #2"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarOtherRoom3",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Other Room #3"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarOther1",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Other #1"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarOther2",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Other #2"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarOther3",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          },
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0",
+                            "maxValue": "1"
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Other #3"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarSmokeDetectorsHallway",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Smoke Detectors-Hallway"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarSmokeDetectorsBedrooms",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Smoke Detectors-Bedroom(s)"
+                    },
+                    {
+                      "code": "IMAGE",
+                      "name": "IMAGE",
+                      "type": "IMAGE",
+                      "boundVariable": {
+                        "code": "VarWaterHeaterStrapPresent",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": true
+                          }
+                        ],
+                        "dataType": "INTEGER"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": false,
+                        "mandatoryComment": true,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": true,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": true
+                      },
+                      "displayText": "Water Heater Strap Present"
+                    }
+                  ],
+                  "displayText": "INTERIOR INSPECTION - PHOTOS",
+                  "type": "COMPOSITE_PHOTO_GRID"
+                },
+                {
+                  "controls": [
+                    {
+                      "code": "TEXTFIELD",
+                      "boundVariable": {
+                        "code": "VarOtherObservedorKnownConditionsNotSpecifiedAbove",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "mandatory": false
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "SINGLE_LINE",
+                        "keypad": "DEFAULT",
+                        "templateType": "QA",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      }
+                    }
+                  ],
+                  "displayText": "Other Observed or Known Conditions Not Specified Above",
+                  "type": "NONE"
+                }
+              ],
+              "headerQuestion": "Photos for all Bedroom,Bathroom and kitchen are mandatory"
+            },
+            {
+              "type": "NORMAL",
+              "questions": [
+                {
+                  "controls": [
+                    {
+                      "code": "ADDITIONALIMAGE",
+                      "name": "ADDITIONALIMAGE",
+                      "type": "ADDITIONALIMAGE",
+                      "boundVariable": {
+                        "code": "VarCMA_InteriorAdditionalPhotos",
+                        "validators": [
+                          {
+                            "validatorType": "VALUE_RANGE_VALIDATOR",
+                            "minValue": "0.00",
+                            "maxValue": "7.00"
+                          }
+                        ],
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "IMAGE",
+                        "templateType": "IMAGE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "photoCommentRequired": true,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": true,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Additional Photo"
+                    }
+                  ],
+                  "displayText": "Additional Photo",
+                  "type": "COMPOSITE_PHOTO_GRID"
+                }
+              ],
+              "headerQuestion": "INTERIOR INSPECTION Additional PHOTO"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "code": "ICMA_TASK_CA",
+  "versionUuid": "f05a0312",
+  "name": "DynamicForm for ICMA Task Mobile"
+}

@@ -1,0 +1,1731 @@
+{
+    "versionUuid": "c3f3d260-40ab-4a56-9bd5-c1def93ad713",
+    "readOnly": false,
+    "sections": [
+                 {
+                 "code": "BPO_TASK_S1",
+                 "name": "BPO_TASK_S1",
+                 "pages": [
+                           {
+                           "code": "BPO_TASK_S1_P1",
+                           "name": "BPO_TASK_S1_P1",
+                           "questionGroups": [
+                                              {
+                                              "code": "ecf11176-982f-4d12-9f5b-2154bec87f2e",
+                                              "name": "ecf11176-982f-4d12-9f5b-2154bec87f2e",
+                                              "questions": [
+                                                            {
+                                                            "code": "38bfbb39-9a91-4eb5-9cf8-269732930141",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarLocation",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "3740ba6f-fbd2-48c6-95c8-c4844c1074ef",
+                                                                                        "name": "3740ba6f-fbd2-48c6-95c8-c4844c1074ef",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "653710cc-4b20-4465-adf8-11d3c23a863d",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "SUBURBANLOCATION",
+                                                                                         "name": "Suburban",
+                                                                                         "key": "SUBURBANLOCATION",
+                                                                                         "label": "Suburban"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "RURALLOCATION",
+                                                                                         "name": "Rural",
+                                                                                         "key": "RURALLOCATION",
+                                                                                         "label": "Rural"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "URBANLOCATION",
+                                                                                         "name": "Urban",
+                                                                                         "key": "URBANLOCATION",
+                                                                                         "label": "Urban"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Location",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "583ac56c-35c2-4528-9e20-04bee81b18ec",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "name": "TEXTFIELD",
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarVacantBoarded",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "VALUE_RANGE_VALIDATOR",
+                                                                                        "code": "237b61bc-5aab-49f1-ab37-cf0112b6b11f",
+                                                                                        "name": "237b61bc-5aab-49f1-ab37-cf0112b6b11f",
+                                                                                        "minValue": "0.00",
+                                                                                        "maxValue": "9999999.00"
+                                                                                        }
+                                                                                        ],
+                                                                         "dataType": "INTEGER"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "NUMBERPAD",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "No. of Vacant/Boarded",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "7a99c95c-1db8-4fb9-8ba7-933cf6749a9d",
+                                                            "order": 2,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "name": "TEXTFIELD",
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarNumOfCompetingListings",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "VALUE_RANGE_VALIDATOR",
+                                                                                        "code": "b176fc3e-9adf-414c-9cdf-310d8c596e51",
+                                                                                        "name": "b176fc3e-9adf-414c-9cdf-310d8c596e51",
+                                                                                        "minValue": "0.00",
+                                                                                        "maxValue": "9999999.00"
+                                                                                        }
+                                                                                        ],
+                                                                         "dataType": "INTEGER"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "NUMBERPAD",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "No. of Competing Listings in Neighborhood",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "19d3259d-9c66-4a2a-a516-a1949eb0cf5f",
+                                                            "order": 3,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarVacancyRate",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "46b57fcf-0489-43da-8c70-f0bc42656dc1",
+                                                                                        "name": "46b57fcf-0489-43da-8c70-f0bc42656dc1",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "36431505-fdac-4d8b-9231-f3305768c156",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "05VACANCYRATE",
+                                                                                         "name": "0-5%",
+                                                                                         "key": "05VACANCYRATE",
+                                                                                         "label": "0-5%"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "510VACANCYRATE",
+                                                                                         "name": "5-10%",
+                                                                                         "key": "510VACANCYRATE",
+                                                                                         "label": "5-10%"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "1020VACANCYRATE",
+                                                                                         "name": "10-20%",
+                                                                                         "key": "1020VACANCYRATE",
+                                                                                         "label": "10-20%"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "20VACANCYRATE",
+                                                                                         "name": "20%+",
+                                                                                         "key": "20VACANCYRATE",
+                                                                                         "label": "20%+"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Vacancy Rate ",
+                                                            "type": "NONE"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "EXTERIOR INSPECTION - NEIGHBORHOOD"
+                                              },
+                                              {
+                                              "code": "5c7007cb-b535-440a-9c82-ea5e3785f614",
+                                              "name": "5c7007cb-b535-440a-9c82-ea5e3785f614",
+                                              "order": 1,
+                                              "questions": [
+                                                            {
+                                                            "code": "6f611cde-7adc-42a5-b74c-237611df2502",
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarCurrentListed",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "288e18a2-ace3-4814-8310-390e341ba555",
+                                                                                        "name": "288e18a2-ace3-4814-8310-390e341ba555",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "ff6023c8-67f1-4c2c-b53a-3b650bc190f3",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": true,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "Currently Listed?"
+                                                                         },
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "name": "TEXTFIELD",
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarAgentName",
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "DEFAULT",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "Listing Agent Name"
+                                                                         },
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "name": "TEXTFIELD",
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarAgentPhone",
+                                                                         "formatter": {
+                                                                         "code": "f35f15d8-d251-4825-a649-8b5e785a3263",
+                                                                         "name": "f35f15d8-d251-4825-a649-8b5e785a3263",
+                                                                         "type": "FORMATTER_PHONE_NUMBER_US",
+                                                                         "pattern": "(XXX)XXX-XXXX"
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "NUMBERPAD",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "Listing Agent Phone Number"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Currently Listed",
+                                                            "type": "COMPOSITE"
+                                                            },
+                                                            {
+                                                            "code": "e9287ecf-e192-477f-a77a-b99a65002bd7",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarOccupancy",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "2624a257-aa97-4a2f-90fa-adb9f5599abd",
+                                                                                        "name": "2624a257-aa97-4a2f-90fa-adb9f5599abd",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "23f63e41-0c1a-4a7e-9d95-f72c299c3454",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "OWNER_OCCUPANCY",
+                                                                                         "name": "Owner",
+                                                                                         "key": "OWNER_OCCUPANCY",
+                                                                                         "label": "Owner"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TENANT_OCCUPANCY",
+                                                                                         "name": "Tenant",
+                                                                                         "key": "TENANT_OCCUPANCY",
+                                                                                         "label": "Tenant"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "VACANT_OCCUPANCY",
+                                                                                         "name": "Vacant",
+                                                                                         "key": "VACANT_OCCUPANCY",
+                                                                                         "label": "Vacant"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "OCCUPIED_OCCUPANCY",
+                                                                                         "name": "Occupied",
+                                                                                         "key": "OCCUPIED_OCCUPANCY",
+                                                                                         "label": "Occupied"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "UNKNOWN_OCCUPANCY",
+                                                                                         "name": "Unknown",
+                                                                                         "key": "UNKNOWN_OCCUPANCY",
+                                                                                         "label": "Unknown"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Occupancy ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "e236ac30-2f8c-4f43-9193-555b84f85789",
+                                                            "order": 2,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarCondemned",
+                                                                         "optionsList": {
+                                                                         "code": "2617fece-5885-46a3-b55f-1bd27bd06cea",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "Fire/Razed/Condemned"
+                                                                         },
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarDamaged",
+                                                                         "optionsList": {
+                                                                         "code": "28b22be1-d6e8-4075-a84d-03c9880aae60",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "INTEGER"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "Vandalized/Damaged"
+                                                                         },
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarEnvHazard",
+                                                                         "optionsList": {
+                                                                         "code": "67c947c8-204e-4c48-81f8-1dfcc17750f2",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "INTEGER"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "Environmental Hazard"
+                                                                         },
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarFloodDamage",
+                                                                         "optionsList": {
+                                                                         "code": "3d063304-d7e9-42b5-8a1b-aff245108b30",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "INTEGER"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "Visible Flood/Water damage"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Subject Impacted by",
+                                                            "type": "COMPOSITE"
+                                                            },
+                                                            {
+                                                            "code": "0103678a-5d9f-4c71-ae16-48251588edfe",
+                                                            "order": 3,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarPropType",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "a80142e6-76e3-441c-a1e5-4e44e04eabf7",
+                                                                                        "name": "a80142e6-76e3-441c-a1e5-4e44e04eabf7",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "13c65e5e-444b-4623-afef-dfbdb23a402f",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "NONRESIDENTIALPROPERTYTYPE",
+                                                                                         "name": "Commercial",
+                                                                                         "key": "NONRESIDENTIALPROPERTYTYPE",
+                                                                                         "label": "Commercial"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "RESIDENTIALPROPERTYTYPE",
+                                                                                         "name": "Mixed Use",
+                                                                                         "key": "RESIDENTIALPROPERTYTYPE",
+                                                                                         "label": "Mixed Use"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "CONDOMINIUMPROPERTYTYPE",
+                                                                                         "name": "Condominium",
+                                                                                         "key": "CONDOMINIUMPROPERTYTYPE",
+                                                                                         "label": "Condominium"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "COOPERATIVEPROPERTYTYPE",
+                                                                                         "name": "Cooperative",
+                                                                                         "key": "COOPERATIVEPROPERTYTYPE",
+                                                                                         "label": "Cooperative"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "FARMPROPERTYTYPE",
+                                                                                         "name": "Farm",
+                                                                                         "key": "FARMPROPERTYTYPE",
+                                                                                         "label": "Farm"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MANUFACTUREDPROPERTYTYPE",
+                                                                                         "name": "Manufactured/Mobile Home",
+                                                                                         "key": "MANUFACTUREDPROPERTYTYPE",
+                                                                                         "label": "Manufactured/Mobile Home"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MULTIFAMILYPROPERTYTYPE",
+                                                                                         "name": "Multifamily (More than four units)",
+                                                                                         "key": "MULTIFAMILYPROPERTYTYPE",
+                                                                                         "label": "Multifamily (More than four units)"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "SFRPROPERTYTYPE",
+                                                                                         "name": "Single Family Residence",
+                                                                                         "key": "SFRPROPERTYTYPE",
+                                                                                         "label": "Single Family Residence"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TOWNHOMEPROPERTYTYPE",
+                                                                                         "name": "Townhouse",
+                                                                                         "key": "TOWNHOMEPROPERTYTYPE",
+                                                                                         "label": "Townhouse"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "DUPLEXPROPERTYTYPE",
+                                                                                         "name": "Duplex",
+                                                                                         "key": "DUPLEXPROPERTYTYPE",
+                                                                                         "label": "Duplex"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TWOFOURPROPERTYTYPE",
+                                                                                         "name": "Two-to-Four unit Residence",
+                                                                                         "key": "TWOFOURPROPERTYTYPE",
+                                                                                         "label": "Two-to-Four unit Residence"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TRIPLEXPROPERTYTYPE",
+                                                                                         "name": "Triplex",
+                                                                                         "key": "TRIPLEXPROPERTYTYPE",
+                                                                                         "label": "Triplex"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "LANDANDLOTSPROPERTYTYPE",
+                                                                                         "name": "Land and Lots",
+                                                                                         "key": "LANDANDLOTSPROPERTYTYPE",
+                                                                                         "label": "Land and Lots"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "QUADPROPERTYTYPE",
+                                                                                         "name": "Quad",
+                                                                                         "key": "QUADPROPERTYTYPE",
+                                                                                         "label": "Quad"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "OTHERSPROPERTYTYPE",
+                                                                                         "name": "Other",
+                                                                                         "key": "OTHERSPROPERTYTYPE",
+                                                                                         "label": "Other"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "ROWHOUSEPROPERTYTYPE",
+                                                                                         "name": "Row House",
+                                                                                         "key": "ROWHOUSEPROPERTYTYPE",
+                                                                                         "label": "Row House"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "PLANNEDUNITDEVELOPMENTPROPERTYTYPE",
+                                                                                         "name": "Planned Unit Development",
+                                                                                         "key": "PLANNEDUNITDEVELOPMENTPROPERTYTYPE",
+                                                                                         "label": "Planned Unit Development"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Property Type ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "43990e75-c768-45f7-8f21-d57884e77ca6",
+                                                            "order": 4,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarDetachedAttached",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "2a5a1747-599d-41bc-901d-62798005b3a0",
+                                                                                        "name": "2a5a1747-599d-41bc-901d-62798005b3a0",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "b5bf3fa7-b8a8-4066-ae9c-12eebcb07367",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "AATTACHEDIMPROVEMENTYPE",
+                                                                                         "name": "AATTACHEDIMPROVEMENTYPE",
+                                                                                         "key": "AATTACHEDIMPROVEMENTYPE",
+                                                                                         "label": "A-Attached"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "DDETACHEDIMPROVEMENTYPE",
+                                                                                         "name": "DDETACHEDIMPROVEMENTYPE",
+                                                                                         "key": "DDETACHEDIMPROVEMENTYPE",
+                                                                                         "label": "D-Detached"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Detached/Attached",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "bbf5498f-6a20-40bb-a4ad-afdd11460318",
+                                                            "order": 5,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarNumStories",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "7d460ee1-d9d2-45ef-a832-ab27a381cd1e",
+                                                                                        "name": "7d460ee1-d9d2-45ef-a832-ab27a381cd1e",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "55c0ef3c-f09f-452f-9c15-bfd0718d6316",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "1STORIESNUM",
+                                                                                         "name": "1",
+                                                                                         "key": "1STORIESNUM",
+                                                                                         "label": "1"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "1.5STORIESNUM",
+                                                                                         "name": "1.5",
+                                                                                         "key": "1.5STORIESNUM",
+                                                                                         "label": "1.5"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "2STORIESNUM",
+                                                                                         "name": "2",
+                                                                                         "key": "2STORIESNUM",
+                                                                                         "label": "2"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "2.5STORIESNUM",
+                                                                                         "name": "2.5",
+                                                                                         "key": "2.5STORIESNUM",
+                                                                                         "label": "2.5"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "3STORIESNUM",
+                                                                                         "name": "3",
+                                                                                         "key": "3STORIESNUM",
+                                                                                         "label": "3"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "OTHERSTORIESNUM",
+                                                                                         "name": "Other",
+                                                                                         "key": "OTHERSTORIESNUM",
+                                                                                         "label": "Other"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Number of Stories",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "9430bdc6-f8c5-46b2-a9d2-93602ec2d313",
+                                                            "order": 6,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarView",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "94931873-cb59-4975-81d9-73c6e6278ccd",
+                                                                                        "name": "94931873-cb59-4975-81d9-73c6e6278ccd",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "716e4db9-b804-4372-872a-76e71218f5af",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "GARDENVIEW",
+                                                                                         "name": "Garden/Park View",
+                                                                                         "key": "GARDENVIEW",
+                                                                                         "label": "Garden/Park View"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TYPICALVIEW",
+                                                                                         "name": "Typical",
+                                                                                         "key": "TYPICALVIEW",
+                                                                                         "label": "Typical"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "WOODEDVIEW",
+                                                                                         "name": "Wooded",
+                                                                                         "key": "WOODEDVIEW",
+                                                                                         "label": "Wooded"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "GOLFCOURSEVIEW",
+                                                                                         "name": "Golf Course",
+                                                                                         "key": "GOLFCOURSEVIEW",
+                                                                                         "label": "Golf Course"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "WATERVIEWVIEW",
+                                                                                         "name": "Water View",
+                                                                                         "key": "WATERVIEWVIEW",
+                                                                                         "label": "Water View"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MOUNTAINVIEW",
+                                                                                         "name": "Mountain",
+                                                                                         "key": "MOUNTAINVIEW",
+                                                                                         "label": "Mountain"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "OTHERSVIEW",
+                                                                                         "name": "Others",
+                                                                                         "key": "OTHERSVIEW",
+                                                                                         "label": "Others"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "CITYVIEW",
+                                                                                         "name": "City",
+                                                                                         "key": "CITYVIEW",
+                                                                                         "label": "City"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "View ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "c65e2f2a-f479-466d-8370-7603517ec34e",
+                                                            "order": 7,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarLandscaping",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "0dab4609-95d4-4ad0-b703-22768efa48d2",
+                                                                                        "name": "0dab4609-95d4-4ad0-b703-22768efa48d2",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "33ccd532-925b-401f-9eae-10f8415b0c51",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "EXCELLENTLANDSCAPING",
+                                                                                         "name": "Excellent",
+                                                                                         "key": "EXCELLENTLANDSCAPING",
+                                                                                         "label": "Excellent"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "GOODLANDSCAPING",
+                                                                                         "name": "Good",
+                                                                                         "key": "GOODLANDSCAPING",
+                                                                                         "label": "Good"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MINIMALLANDSCAPING",
+                                                                                         "name": "Minimal",
+                                                                                         "key": "MINIMALLANDSCAPING",
+                                                                                         "label": "Minimal"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "NONELANDSCAPING",
+                                                                                         "name": "None",
+                                                                                         "key": "NONELANDSCAPING",
+                                                                                         "label": "None"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Landscaping ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "35e01ad7-6258-4df8-a155-ea6e5956e554",
+                                                            "order": 8,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarNumUnits",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "320dd78c-e48d-476c-82d8-97c816c87b18",
+                                                                                        "name": "320dd78c-e48d-476c-82d8-97c816c87b18",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "744df2ab-9f11-4a6f-8963-b4d5e1b787ba",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "1UNITSNUM",
+                                                                                         "name": "1",
+                                                                                         "key": "1UNITSNUM",
+                                                                                         "label": "1"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "2UNITSNUM",
+                                                                                         "name": "2",
+                                                                                         "key": "2UNITSNUM",
+                                                                                         "label": "2"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "3UNITSNUM",
+                                                                                         "name": "3",
+                                                                                         "key": "3UNITSNUM",
+                                                                                         "label": "3"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "4UNITSNUM",
+                                                                                         "name": "4",
+                                                                                         "key": "4UNITSNUM",
+                                                                                         "label": "4"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "5UNITSNUM",
+                                                                                         "name": "5",
+                                                                                         "key": "5UNITSNUM",
+                                                                                         "label": "5"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "6UNITSNUM",
+                                                                                         "name": "6",
+                                                                                         "key": "6UNITSNUM",
+                                                                                         "label": "6"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "OTHERUNITSNUM",
+                                                                                         "name": "Other",
+                                                                                         "key": "OTHERUNITSNUM",
+                                                                                         "label": "Other"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "# of Units ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "d056ca30-906b-4537-acfb-5426d433b1c2",
+                                                            "order": 9,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarDesignStyle",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "c9f68e70-dd6c-411d-970a-3073fcba3200",
+                                                                                        "name": "c9f68e70-dd6c-411d-970a-3073fcba3200",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "e42f759c-b497-43ce-a342-fec46a856519",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "RANCHDESIGN",
+                                                                                         "name": "1 - Ranch",
+                                                                                         "key": "RANCHDESIGN",
+                                                                                         "label": "1 - Ranch"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MULTILEVELDESIGN",
+                                                                                         "name": "2 - Multi Level",
+                                                                                         "key": "MULTILEVELDESIGN",
+                                                                                         "label": "2 - Multi Level"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "COLONIALDESIGN",
+                                                                                         "name": "3 - Colonial",
+                                                                                         "key": "COLONIALDESIGN",
+                                                                                         "label": "3 - Colonial"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "CONTEMPORARYDESIGN",
+                                                                                         "name": "4 - Contemporary",
+                                                                                         "key": "CONTEMPORARYDESIGN",
+                                                                                         "label": "4 - Contemporary"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TRADITIONALDESIGN",
+                                                                                         "name": "5 - Traditional",
+                                                                                         "key": "TRADITIONALDESIGN",
+                                                                                         "label": "5 - Traditional"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "ROWHOUSEDESIGN",
+                                                                                         "name": "6 - Rowhouse",
+                                                                                         "key": "ROWHOUSEDESIGN",
+                                                                                         "label": "6 - Rowhouse"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "TOWNHOUSEDESIGN",
+                                                                                         "name": "7 - Townhouse",
+                                                                                         "key": "TOWNHOUSEDESIGN",
+                                                                                         "label": "7 - Townhouse"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "CAPECODDESIGN",
+                                                                                         "name": "8 - Cape Cod",
+                                                                                         "key": "CAPECODDESIGN",
+                                                                                         "label": "8 - Cape Cod"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "SPLITDESIGN",
+                                                                                         "name": "9 - Split",
+                                                                                         "key": "SPLITDESIGN",
+                                                                                         "label": "9 - Split"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "RAISEDRANCHDESIGN",
+                                                                                         "name": "10 - Raised Ranch",
+                                                                                         "key": "RAISEDRANCHDESIGN",
+                                                                                         "label": "10 - Raised Ranch"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "VICTORIANDESIGN",
+                                                                                         "name": "11 - Victorian",
+                                                                                         "key": "VICTORIANDESIGN",
+                                                                                         "label": "11 - Victorian"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "CONDOMINIUMDESIGN",
+                                                                                         "name": "12 - Condominium",
+                                                                                         "key": "CONDOMINIUMDESIGN",
+                                                                                         "label": "12 - Condominium"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MULTIFAMILYDESIGN",
+                                                                                         "name": "13 - Multi-Family",
+                                                                                         "key": "MULTIFAMILYDESIGN",
+                                                                                         "label": "13 - Multi-Family"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MANUFACTUREDDESIGN",
+                                                                                         "name": "14 - Manufactured",
+                                                                                         "key": "MANUFACTUREDDESIGN",
+                                                                                         "label": "14 - Manufactured"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MOBILEDESIGN",
+                                                                                         "name": "15 - Mobile",
+                                                                                         "key": "MOBILEDESIGN",
+                                                                                         "label": "15 - Mobile"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MODULARDESIGN",
+                                                                                         "name": "16 - Modular",
+                                                                                         "key": "MODULARDESIGN",
+                                                                                         "label": "16 - Modular"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "OTHERDESIGN",
+                                                                                         "name": "17 - Other",
+                                                                                         "key": "OTHERDESIGN",
+                                                                                         "label": "17 - Other"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "CABINDESIGN",
+                                                                                         "name": "18 - Cabin",
+                                                                                         "key": "CABINDESIGN",
+                                                                                         "label": "18 - Cabin"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "BROWNSTONEDESIGN",
+                                                                                         "name": "19 - Brownstone",
+                                                                                         "key": "BROWNSTONEDESIGN",
+                                                                                         "label": "19 - Brownstone"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "BUNGALOWDESIGN",
+                                                                                         "name": "20 - Bungalow",
+                                                                                         "key": "BUNGALOWDESIGN",
+                                                                                         "label": "20 - Bungalow"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "COTTAGEDESIGN",
+                                                                                         "name": "21 - Cottage",
+                                                                                         "key": "COTTAGEDESIGN",
+                                                                                         "label": "21 - Cottage"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "MANSIONDESIGN",
+                                                                                         "name": "22 - Mansion",
+                                                                                         "key": "MANSIONDESIGN",
+                                                                                         "label": "22 - Mansion"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Design Style ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "fc3475aa-4eb3-4eb1-8765-2bc81642dc9d",
+                                                            "order": 10,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarManuHousing",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "8180358e-2280-4a53-91b5-68d0dec4776c",
+                                                                                        "name": "8180358e-2280-4a53-91b5-68d0dec4776c",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "40831a8e-28da-4468-a5ef-67d40b6dc4b7",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Manufactured Housing",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "25707f69-b630-4795-bf25-372e6d8286e5",
+                                                            "order": 11,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarCondition",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "72418a63-e056-4e66-88ee-05e6cebba769",
+                                                                                        "name": "72418a63-e056-4e66-88ee-05e6cebba769",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "6af6831a-cd41-4b53-9f4a-64b1c4c69c66",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "AVERAGECONDITION",
+                                                                                         "name": "A-Average",
+                                                                                         "key": "AVERAGECONDITION",
+                                                                                         "label": "A-Average"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "EXCELLENTCONDITION",
+                                                                                         "name": "E-Excellent",
+                                                                                         "key": "EXCELLENTCONDITION",
+                                                                                         "label": "E-Excellent"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "FAIRCONDITION",
+                                                                                         "name": "F-Fair",
+                                                                                         "key": "FAIRCONDITION",
+                                                                                         "label": "F-Fair"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "GOODCONDITION",
+                                                                                         "name": "G-Good",
+                                                                                         "key": "GOODCONDITION",
+                                                                                         "label": "G-Good"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "POORCONDITION",
+                                                                                         "name": "P-Poor",
+                                                                                         "key": "POORCONDITION",
+                                                                                         "label": "P-Poor"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "UNINHABITABLECONDITION",
+                                                                                         "name": "U-Uninhabitable",
+                                                                                         "key": "UNINHABITABLECONDITION",
+                                                                                         "label": "U-Uninhabitable"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Condition ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "1e2361b0-9b49-41fb-a976-772a3e8506a7",
+                                                            "order": 12,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "OPTIONS_LIST",
+                                                                         "name": "OPTIONS_LIST",
+                                                                         "type": "OPTIONS_LIST",
+                                                                         "boundVariable": {
+                                                                         "code": "VarGaragePort",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "f691fc70-8a94-46fe-b5d8-916bf7ab4018",
+                                                                                        "name": "f691fc70-8a94-46fe-b5d8-916bf7ab4018",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "fcbb599c-b8a2-4627-acd1-29ce5b33b5a8",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "NONEGARAGE",
+                                                                                         "name": "None",
+                                                                                         "key": "NONEGARAGE",
+                                                                                         "label": "None"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "ATTACHEDGARAGE",
+                                                                                         "name": "Attached",
+                                                                                         "key": "ATTACHEDGARAGE",
+                                                                                         "label": "Attached"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "DETACHEDGARAGE",
+                                                                                         "name": "Detached",
+                                                                                         "key": "DETACHEDGARAGE",
+                                                                                         "label": "Detached"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "CARPORTGARAGE",
+                                                                                         "name": "Carport",
+                                                                                         "key": "CARPORTGARAGE",
+                                                                                         "label": "Carport"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "ATTACHEDDETACHEDGARAGE",
+                                                                                         "name": "Attached+Detached",
+                                                                                         "key": "ATTACHEDDETACHEDGARAGE",
+                                                                                         "label": "Attached+Detached"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "ATTACHEDCARPORTGARAGE",
+                                                                                         "name": "Attached+Carport",
+                                                                                         "key": "ATTACHEDCARPORTGARAGE",
+                                                                                         "label": "Attached+Carport"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "DETACHEDCARPORTGARAGE",
+                                                                                         "name": "Detached+Carport",
+                                                                                         "key": "DETACHEDCARPORTGARAGE",
+                                                                                         "label": "Detached+Carport"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "GARAGEGARAGE",
+                                                                                         "name": "Garage",
+                                                                                         "key": "GARAGEGARAGE",
+                                                                                         "label": "Garage"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "DRIVEWAYGARAGE",
+                                                                                         "name": "Driveway",
+                                                                                         "key": "DRIVEWAYGARAGE",
+                                                                                         "label": "Driveway"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "NEXT_SCREEN",
+                                                                         "templateType": "SINGLE_SELECT",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Garage/Carport ",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "b1e52551-37bb-4cfc-ab6c-77349878b3f9",
+                                                            "order": 13,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "name": "TEXTFIELD",
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarGrossArea",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "VALUE_RANGE_VALIDATOR",
+                                                                                        "code": "e3633320-0fb7-4ad6-9707-3479a4be49c8",
+                                                                                        "name": "e3633320-0fb7-4ad6-9707-3479a4be49c8",
+                                                                                        "minValue": "1.00",
+                                                                                        "maxValue": "9999999.00"
+                                                                                        }
+                                                                                        ],
+                                                                         "dataType": "INTEGER"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "NUMBERPAD",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Gross living area",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "7ea1beec-2d11-4db1-b6e6-2063b37cd47c",
+                                                            "order": 14,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "name": "TEXTFIELD",
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarOthAmneties",
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "SINGLE_LINE",
+                                                                         "keypad": "DEFAULT",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Other Amenities",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "5f76a4ec-3c86-4506-89a0-ee226140f28b",
+                                                            "order": 15,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "TEXTFIELD",
+                                                                         "name": "TEXTFIELD",
+                                                                         "type": "TEXTFIELD",
+                                                                         "boundVariable": {
+                                                                         "code": "VarComments",
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "MULTI_LINE",
+                                                                         "keypad": "DEFAULT",
+                                                                         "templateType": "QA",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "COMMENTS",
+                                                            "type": "NONE"
+                                                            },
+                                                            {
+                                                            "code": "eac6546c-594d-41b3-a71c-d61154afb086",
+                                                            "order": 16,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "SINGLE_CHOICE",
+                                                                         "name": "SINGLE_CHOICE",
+                                                                         "type": "SINGLE_CHOICE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarPropConform",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "8780edfd-2a27-4de3-b0c3-7b9be56523ca",
+                                                                                        "name": "8780edfd-2a27-4de3-b0c3-7b9be56523ca",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "optionsList": {
+                                                                         "code": "0ccbce8f-7f10-46d0-b14d-b44616106428",
+                                                                         "optionItems": [
+                                                                                         {
+                                                                                         "code": "Yes",
+                                                                                         "name": "Yes",
+                                                                                         "key": "Yes",
+                                                                                         "label": "Yes"
+                                                                                         },
+                                                                                         {
+                                                                                         "code": "No",
+                                                                                         "name": "No",
+                                                                                         "key": "No",
+                                                                                         "label": "No"
+                                                                                         }
+                                                                                         ]
+                                                                         },
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "BINARY",
+                                                                         "templateType": "STATE",
+                                                                         "requirePhoto": false,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": false,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": false
+                                                                         }
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Does the property generally conform to the neighborhood in terms of style,condition and construction materials?  ",
+                                                            "type": "NONE"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "EXTERIOR INSPECTION - SUBJECT PROPERTY"
+                                              },
+                                              {
+                                              "code": "74b12eaa-6d97-4677-b482-e21d86e580c8",
+                                              "name": "74b12eaa-6d97-4677-b482-e21d86e580c8",
+                                              "order": 1,
+                                              "questions": [
+                                                            {
+                                                            "code": "6f3131c2-61e6-4b29-94b4-89c9b0212431",
+                                                            "order": 1,
+                                                            "controls": [
+                                                                         {
+                                                                         "code": "IMAGE",
+                                                                         "name": "IMAGE",
+                                                                         "type": "IMAGE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarBPO_ExteriorFrontView",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "437e0127-3c79-4351-897f-cb48c919af1e",
+                                                                                        "name": "437e0127-3c79-4351-897f-cb48c919af1e",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "IMAGE",
+                                                                         "templateType": "IMAGE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": true
+                                                                         },
+                                                                         "displayText": "Front view"
+                                                                         },
+                                                                         {
+                                                                         "code": "IMAGE",
+                                                                         "name": "IMAGE",
+                                                                         "type": "IMAGE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarBPO_ExteriorRearView",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "27f1378e-abe2-4f07-87b6-1db4af35b95f",
+                                                                                        "name": "27f1378e-abe2-4f07-87b6-1db4af35b95f",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "IMAGE",
+                                                                         "templateType": "IMAGE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": true
+                                                                         },
+                                                                         "displayText": "Rear view"
+                                                                         },
+                                                                         {
+                                                                         "code": "IMAGE",
+                                                                         "name": "IMAGE",
+                                                                         "type": "IMAGE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarBPO_ExteriorStreetView",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "MANDATORY_VALIDATOR",
+                                                                                        "code": "f6a9b578-c7ba-4fe7-95af-10dd879aabc2",
+                                                                                        "name": "f6a9b578-c7ba-4fe7-95af-10dd879aabc2",
+                                                                                        "mandatory": true
+                                                                                        }
+                                                                                        ],
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "IMAGE",
+                                                                         "templateType": "IMAGE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": true,
+                                                                         "multiplePhoto": false,
+                                                                         "mandatoryComment": true
+                                                                         },
+                                                                         "displayText": "Street view"
+                                                                         },
+                                                                         {
+                                                                         "code": "ADDITIONALIMAGE",
+                                                                         "name": "ADDITIONALIMAGE",
+                                                                         "type": "ADDITIONALIMAGE",
+                                                                         "boundVariable": {
+                                                                         "code": "VarBPO_ExteriorAdditionalPhotos",
+                                                                         "validators": [
+                                                                                        {
+                                                                                        "validatorType": "VALUE_RANGE_VALIDATOR",
+                                                                                        "code": "8ae5bd0d-4e59-4796-bc3b-7f0a27cdc94f",
+                                                                                        "name": "8ae5bd0d-4e59-4796-bc3b-7f0a27cdc94f",
+                                                                                        "minValue": "0.00",
+                                                                                        "maxValue": "7.00"
+                                                                                        }
+                                                                                        ],
+                                                                         "dataType": "STRING"
+                                                                         },
+                                                                         "attributes": {
+                                                                         "variant": "IMAGE",
+                                                                         "templateType": "IMAGE",
+                                                                         "requirePhoto": true,
+                                                                         "toggleSubQuestions": false,
+                                                                         "requireComment": true,
+                                                                         "mandatoryPhoto": false,
+                                                                         "multiplePhoto": true,
+                                                                         "mandatoryComment": false
+                                                                         },
+                                                                         "displayText": "ExtraPhoto"
+                                                                         }
+                                                                         ],
+                                                            "displayText": "Exterior inspection photos",
+                                                            "type": "COMPOSITE_PHOTO_GRID"
+                                                            }
+                                                            ],
+                                              "type": "NORMAL",
+                                              "headerQuestion": "Exterior inspection photos"
+                                              }
+                                              ]
+                           }
+                           ],
+                 "displayText": "Details",
+                 "status": "UNVISITED"
+                 }
+                 ]
+}

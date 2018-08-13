@@ -1,0 +1,824 @@
+{
+  "versionUuid": "77dec0a8-e905-4643-9f83-57362ca236a8",
+  "readOnly": false,
+  "rules": {
+    "VarWaterType": {
+      "yes": {
+        "rulesToValidate": [
+          {
+            "expression": "{varABC:102T #&& varMNO:201F #|| varXYZ:399([a-z0-9])} #&& varPQR:499(1-99)",
+            "validationMessage": "XYZ action has to be performed"
+          }
+        ],
+        "rulesToRender": {
+          "VarWaterType": {
+            "attributes": {
+              "isVisible": true,
+              "requirePhoto": true,
+              "requireComment": true
+                "defaultValue" : "F{}"
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarWaterSightFlowIndicatesLeak": {
+            "attributes": {
+              "isVisible": true
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          }
+        }
+      },
+      "no": {
+        "rulesToValidate": [
+          {
+            "expression": "{varABC:102T #&& varMNO:201F #|| varXYZ:399([a-z0-9])} #&& varPQR:499(1-99)",
+            "validationMessage": "XYZ action has to be performed"
+          }
+        ],
+        "rulesToRender": {
+          "VarWaterType": {
+            "attributes": {
+              "isVisible": true,
+              "requirePhoto": false,
+              "requireComment": false
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarWaterSightFlowIndicatesLeak": {
+            "attributes": {
+              "isVisible": false
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "VarPropertyUseGas": {
+      "yes": {
+        "rulesToValidate": [
+          {
+            "expression": "{varABC:102T #&& varMNO:201F #|| varXYZ:399([a-z0-9])} #&& varPQR:499(1-99)",
+            "validationMessage": "XYZ action has to be performed"
+          }
+        ],
+        "rulesToRender": {
+          "VarPropertyUseGas": {
+            "attributes": {
+              "isVisible": true,
+              "requirePhoto": true,
+              "requireComment": true,
+              "mandatoryPhoto": true
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarGasType": {
+            "attributes": {
+              "isVisible": true
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarNaturalGasOn": {
+            "attributes": {
+              "isVisible": true
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarSufficientOnsitePropaneGas": {
+            "attributes": {
+              "isVisible": true
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          }
+        }
+      },
+      "no": {
+        "rulesToValidate": [
+          {
+            "expression": "{varABC:102T #&& varMNO:201F #|| varXYZ:399([a-z0-9])} #&& varPQR:499(1-99)",
+            "validationMessage": "XYZ action has to be performed"
+          }
+        ],
+        "rulesToRender": {
+          "VarPropertyUseGas": {
+            "attributes": {
+              "isVisible": true,
+              "requirePhoto": false,
+              "requireComment": false,
+              "mandatoryPhoto": false
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarGasType": {
+            "attributes": {
+              "isVisible": false
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarNaturalGasOn": {
+            "attributes": {
+              "isVisible": false
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          },
+          "VarSufficientOnsitePropaneGas": {
+            "attributes": {
+              "isVisible": false
+            },
+            "validators": [
+              {
+                "mandatory": true,
+                "message": "This is required",
+                "validatorType": "MANDATORY_VALIDATOR"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "sections": [
+    {
+      "code": "UTI_INSPECTION_TASK_MOBILE_S1",
+      "name": "UTI_INSPECTION_TASK_MOBILE_S1",
+      "pages": [
+        {
+          "code": "UTI_TASK_S1_P1",
+          "name": "UTI_TASK_S1_P1",
+          "questionGroups": [
+            {
+              "code": "a53f81db-5287-43ff-9f55-e4c257c7afed",
+              "name": "a53f81db-5287-43ff-9f55-e4c257c7afed",
+              "questions": [
+                {
+                  "code": "a7bf740d-636c-450c-b0b1-aa8a24ac9f19",
+                  "controls": [
+                    {
+                      "code": "SINGLE_CHOICE",
+                      "name": "SINGLE_CHOICE",
+                      "type": "SINGLE_CHOICE",
+                      "boundVariable": {
+                        "code": "VarElectricityOn",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "f204a913-fa2c-4e05-bae8-f8f33ee90585",
+                            "name": "f204a913-fa2c-4e05-bae8-f8f33ee90585",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "e9afdc52-3c60-4563-8c88-e897cc4bb101",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": true,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Electricity is ON. If response is 'NO', provide relevant details in Comments."
+                    }
+                  ],
+                  "displayText": "Electricity is ON. If response is 'NO', provide relevant details in Comments.",
+                  "type": "NONE"
+                }
+              ],
+              "type": "NORMAL",
+              "headerQuestion": "Electricity"
+            },
+            {
+              "code": "a997d129-72d5-4632-b3e3-bcc3d76e57f1",
+              "name": "a997d129-72d5-4632-b3e3-bcc3d76e57f1",
+              "order": 1,
+              "questions": [
+                {
+                  "code": "d7c7430e-53a4-4264-b6f9-a1fc45c94484",
+                  "controls": [
+                    {
+                      "code": "SINGLE_CHOICE",
+                      "name": "SINGLE_CHOICE",
+                      "type": "SINGLE_CHOICE",
+                      "boundVariable": {
+                        "code": "VarWaterType",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "7238bc9c-4407-49c3-ab3e-599615a2a458",
+                            "name": "7238bc9c-4407-49c3-ab3e-599615a2a458",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "689b8e33-adad-48cd-852d-e12e978aac3d",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Municipal water & sewer"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "Private well & septic"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": true,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": true,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Water type"
+                    },
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarWaterSightFlowIndicatesLeak",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "c5a80164-d300-4011-a20d-b1e6bfa925e8",
+                            "name": "c5a80164-d300-4011-a20d-b1e6bfa925e8",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "0df2e366-ac87-4362-86e9-aea13c4ae7d0",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": false,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Check the sight flow indicator (triangle or asterisk shape) on the municipal water meter: does it indicate leaks exist within the plumbing system? If response is 'YES', provide relevant details in Comments."
+                    }
+                  ],
+                  "displayText": "Water type",
+                  "type": "COMPOSITE"
+                },
+                {
+                  "code": "5bfacafa-7686-421c-81f4-5e72c9f8853c",
+                  "order": 1,
+                  "controls": [
+                    {
+                      "code": "SINGLE_CHOICE",
+                      "name": "SINGLE_CHOICE",
+                      "type": "SINGLE_CHOICE",
+                      "boundVariable": {
+                        "code": "VarWaterOn",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "37f82f01-5d27-4034-a6ac-9e944331d429",
+                            "name": "37f82f01-5d27-4034-a6ac-9e944331d429",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "7df8046f-887a-4ea1-bcc9-40001e949ccb",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": true,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Water is ON. If response is 'NO', provide relevant details in Comments."
+                    }
+                  ],
+                  "displayText": "Water is ON. If response is 'NO', provide relevant details in Comments.",
+                  "type": "NONE"
+                },
+                {
+                  "code": "da0a805d-2ce1-484b-9d61-22dfec6959e4",
+                  "order": 2,
+                  "controls": [
+                    {
+                      "code": "SINGLE_CHOICE",
+                      "name": "SINGLE_CHOICE",
+                      "type": "SINGLE_CHOICE",
+                      "boundVariable": {
+                        "code": "VarWaterShutOffValveLeakEvidence",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "a8e2a6e8-a52b-41b2-81d3-c564a25f0b2f",
+                            "name": "a8e2a6e8-a52b-41b2-81d3-c564a25f0b2f",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "f490909d-6df6-4e85-9b19-9af20690a10a",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": true,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Check all supply shut-off valves (angled stops) under sinks and toilets: is there evidence of drips or leaks? If response is 'YES', provide relevant details in Comments."
+                    }
+                  ],
+                  "displayText": "Check all supply shut-off valves (angled stops) under sinks and toilets: is there evidence of drips or leaks? If response is 'YES', provide relevant details in Comments.",
+                  "type": "NONE"
+                },
+                {
+                  "code": "df01384b-1d25-4a37-a46b-6a3c42604528",
+                  "order": 3,
+                  "controls": [
+                    {
+                      "code": "SINGLE_CHOICE",
+                      "name": "SINGLE_CHOICE",
+                      "type": "SINGLE_CHOICE",
+                      "boundVariable": {
+                        "code": "VarWaterDrainLineLeakEvidence",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "cc9ec914-ec7a-4186-ab3b-27093c301dd9",
+                            "name": "cc9ec914-ec7a-4186-ab3b-27093c301dd9",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "8cc01a41-4a0f-44bd-af9a-b3e4bd3d28da",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": true,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Check all drain lines under all tubs, sinks and toilets: is there evidence of leak? If response is 'YES', provide relevant details in Comments."
+                    }
+                  ],
+                  "displayText": "Check all drain lines under all tubs, sinks and toilets: is there evidence of leak? If response is 'YES', provide relevant details in Comments.",
+                  "type": "NONE"
+                }
+              ],
+              "type": "NORMAL",
+              "headerQuestion": "Water"
+            },
+            {
+              "code": "18df1479-fc82-4671-96de-553ad44dbf3a",
+              "name": "18df1479-fc82-4671-96de-553ad44dbf3a",
+              "order": 2,
+              "questions": [
+                {
+                  "code": "b3a688a6-4619-477e-92f3-cd28bf32a06a",
+                  "controls": [
+                    {
+                      "code": "SINGLE_CHOICE",
+                      "name": "SINGLE_CHOICE",
+                      "type": "SINGLE_CHOICE",
+                      "boundVariable": {
+                        "code": "VarPropertyUseGas",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "63892beb-4e9b-4f87-8f56-46ecb50f95be",
+                            "name": "63892beb-4e9b-4f87-8f56-46ecb50f95be",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "5b346ab2-3ff0-424f-817e-cbef34f33205",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": false,
+                        "toggleSubQuestions": true,
+                        "requireComment": false,
+                        "mandatoryPhoto": false,
+                        "multiplePhoto": false,
+                        "mandatoryComment": false,
+                        "isVisible": true,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Does the property use Gas?  Select 'NO' if property is all electric."
+                    },
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarGasType",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "5d1039a6-591b-48c2-a1fc-06aaa0d2c7e9",
+                            "name": "5d1039a6-591b-48c2-a1fc-06aaa0d2c7e9",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "21cde4a7-dbbd-44f4-a97c-efc9e803a640",
+                          "optionItems": [
+                            {
+                              "code": "Natural",
+                              "name": "Natural",
+                              "key": "Natural",
+                              "label": "Natural"
+                            },
+                            {
+                              "code": "Propane",
+                              "name": "Propane",
+                              "key": "Propane",
+                              "label": "Propane"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "BINARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": false,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Gas type"
+                    },
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarNaturalGasOn",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "523c1ee0-b40e-41b7-9dd4-d586e656c48f",
+                            "name": "523c1ee0-b40e-41b7-9dd4-d586e656c48f",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "753fe094-202d-4bac-aa34-f48723768426",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            },
+                            {
+                              "code": "NA",
+                              "name": "NA",
+                              "key": "NA",
+                              "label": "NA"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "TERNARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": false,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Natural gas is ON. If response is 'NO', provide relevant details in Comments."
+                    },
+                    {
+                      "code": "OPTIONS_LIST",
+                      "name": "OPTIONS_LIST",
+                      "type": "OPTIONS_LIST",
+                      "boundVariable": {
+                        "code": "VarSufficientOnsitePropaneGas",
+                        "validators": [
+                          {
+                            "validatorType": "MANDATORY_VALIDATOR",
+                            "code": "64a0540c-97f7-4c67-8be8-cf360c6ee953",
+                            "name": "64a0540c-97f7-4c67-8be8-cf360c6ee953",
+                            "mandatory": true
+                          }
+                        ],
+                        "optionsList": {
+                          "code": "8710dfc8-6921-4aa8-8222-d362f6a3e2ff",
+                          "optionItems": [
+                            {
+                              "code": "Yes",
+                              "name": "Yes",
+                              "key": "Yes",
+                              "label": "Yes"
+                            },
+                            {
+                              "code": "No",
+                              "name": "No",
+                              "key": "No",
+                              "label": "No"
+                            },
+                            {
+                              "code": "NA",
+                              "name": "NA",
+                              "key": "NA",
+                              "label": "NA"
+                            }
+                          ]
+                        },
+                        "dataType": "STRING"
+                      },
+                      "attributes": {
+                        "variant": "TERNARY",
+                        "templateType": "STATE",
+                        "requirePhoto": true,
+                        "toggleSubQuestions": false,
+                        "requireComment": true,
+                        "mandatoryPhoto": true,
+                        "multiplePhoto": true,
+                        "mandatoryComment": false,
+                        "isVisible": false,
+                        "isMandatory": false,
+                        "maxPhotoCount": 50,
+                        "photoCommentRequired": false,
+                        "photoCommentMandatory": false,
+                        "isPhotoCommentRequired": false,
+                        "isPhotoCommentMandatory": false
+                      },
+                      "displayText": "Propane gas tank located onsite and contains sufficient amount of propane for tenant move-in. If response is 'NO', provide relevant details in Comments."
+                    }
+                  ],
+                  "displayText": "Does the property use Gas? Select 'NO' if property is all electric. Photo is required.",
+                  "type": "COMPOSITE"
+                }
+              ],
+              "type": "NORMAL",
+              "headerQuestion": "Gas"
+            }
+          ]
+        }
+      ],
+      "displayText": "Standard Checklist",
+      "status": "UNVISITED"
+    }
+  ]
+}

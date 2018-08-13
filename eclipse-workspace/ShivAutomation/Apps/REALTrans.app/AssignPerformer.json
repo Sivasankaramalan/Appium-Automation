@@ -1,0 +1,56 @@
+ [
+  {
+  "id": "063ab335-e75f-40e6-92b5-fadbeac4d284",
+  "firstName": "Angelou",
+  "lastName": "Richard",
+  "role": "PERFORMER",
+  "title": null,
+  "registrationStatus": "APPROVED",
+  "active": true,
+  "locked": false,
+  "workLoad": 3,
+  "lastSeen": {
+  "where": {
+  "latitude": 34.0529,
+  "longitude": -85.2096
+  },
+  "when": null
+  }
+  },
+  {
+  "id": "063ab335-e75f-40e6-92b5-fadbeac4d284",
+  "firstName": "Joe",
+  "lastName": "Kingman",
+  "role": "PERFORMER",
+  "title": null,
+  "registrationStatus": "APPROVED",
+  "active": true,
+  "locked": false,
+  "workLoad": 4,
+  "lastSeen": {
+  "where": {
+  "latitude": 34.8423,
+  "longitude": -84.3903
+  },
+  "when": null
+  }
+  },
+  {
+  "id": "063ab335-e75f-40e6-92b5-fadbeac4d284",
+  "firstName": "Caroline",
+  "lastName": "Thompson",
+  "role": "PERFORMER",
+  "title": null,
+  "registrationStatus": "APPROVED",
+  "active": true,
+  "locked": false,
+  "workLoad": 10,
+  "lastSeen": {
+  "where": {
+  "latitude": 34.9746,
+  "longitude": -85.867
+  },
+  "when": null
+  }
+  }
+  ]
